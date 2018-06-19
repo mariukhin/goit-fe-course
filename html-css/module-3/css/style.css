@@ -1,25 +1,33 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
-header {
-    margin: 0 auto;
-    width: 725px;
-    height: 130px; 
-}
-
-header ul{
-    list-style: none;
-    padding-top: 30px;
-}
-
-header ul li{
-    display: inline;
-    margin-right: 2px;
+body{
+    margin: 0;
     font-family: 'Playfair Display', serif;
-    font-size: 17px;
 }
-header ul li a{
-    padding: 0 40px;
+header {
+    padding-top: 70px;
+    padding-bottom: 10px;
+}
+
+.menu{
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    width: 590px;
+    font-size: 0;
+}
+
+.menu-item{
+    display: inline-block;
+    margin-right: 80px;
+
+}
+a{
+    display: block;
     text-decoration: none;
+    font-size: 14px;
+    line-height: 24px;
     text-transform: uppercase;
     color: #777777;    
 }
@@ -27,9 +35,67 @@ a:hover{
     color: #03a9f4;
 }
 
-div.ar1, div.ar2, div.ar3, div.ar4, div.ar5, div.ar6{
-    display: inline-block;
-    padding-left: 5px;
-    width: 470px;
+main{
+    padding-top: 70px;
 }
+section{
+    margin: 0 auto;
+    padding-bottom: 134px;
+    width: 920px;
+    font-size: 0;
+}
+.last_section{
+    margin: 0 auto;
+    padding-bottom: 50px;
+    width: 920px;
+    font-size: 0;
+}
+h5{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    color: #c7c1b6;
+    text-transform: uppercase;
+}
+img{
+    width: 421px;
+    height: 280px;
+}
+
+.article{
+    display: inline-block;
+    width: 420px;
+}
+.article:first-child {
+    margin-right: 60px;
+}
+h2{
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 30px;
+    line-height: 25px;
+    color: #626262;
+}
+p{
+    margin: 0;
+    font-size: 14px;
+    line-height: 24px;
+    color: #626262;
+}
+footer{
+    margin-bottom: 70px;
+}
+button{
+    display: block;
+    margin: 0 auto;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 164px;
+    background-color: #ffffff;
+    border: 1px solid #626262;
+    font-size: 20px;
+    line-height: 24px;
+    color: #626262;
+}
+
 
