@@ -5,13 +5,13 @@ body{
     font-family: 'Playfair Display', serif;
 }
 header {
-    padding-top: 80px;
+    padding-top: 73px;
 }
 
 .menu{
     margin: 0 auto;
     padding: 0;
-    padding-bottom: 20px;
+    padding-bottom: 27px;
     box-sizing: border-box;
     width: 590px;
     font-size: 0;
