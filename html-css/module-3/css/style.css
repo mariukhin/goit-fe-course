@@ -5,8 +5,8 @@ body{
     font-family: 'Playfair Display', serif;
 }
 header {
-    padding-top: 70px;
-    padding-bottom: 10px;
+    padding-top: 73px;
+    padding-bottom: 7px;
 }
 
 .menu{
@@ -20,8 +20,11 @@ header {
 
 .menu-item{
     display: inline-block;
-    margin-right: 80px;
+    margin-left: 104px;
 
+}
+.menu-item:first-child{
+    margin: 0;
 }
 a{
     display: block;
@@ -40,25 +43,28 @@ main{
 }
 section{
     margin: 0 auto;
-    padding-bottom: 134px;
+    padding-bottom: 104px;
     width: 920px;
     font-size: 0;
 }
-.last_section{
+section:last-child{
     margin: 0 auto;
-    padding-bottom: 50px;
+    padding-bottom: 33px;
+    padding-top: 5px;
     width: 920px;
     font-size: 0;
 }
 h5{
     font-family: 'Ubuntu', sans-serif;
     font-size: 14px;
+    font-stretch: semi-condensed;
     font-weight: lighter;
     color: #c7c1b6;
     text-transform: uppercase;
+    padding-top: 5px;
 }
 img{
-    width: 421px;
+    width: 420px;
     height: 280px;
 }
 
@@ -78,21 +84,24 @@ h2{
 }
 p{
     margin: 0;
+    padding-top: 4px;
     font-size: 14px;
     line-height: 24px;
     color: #626262;
 }
 footer{
     margin-bottom: 70px;
+    margin-right: 38px;
 }
 button{
     display: block;
     margin: 0 auto;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 17px;
+    padding-bottom: 17px;
     width: 164px;
     background-color: #ffffff;
     border: 1px solid #626262;
+    font-family: 'Playfair Display', serif;
     font-size: 20px;
     line-height: 24px;
     color: #626262;
