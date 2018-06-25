@@ -6,12 +6,12 @@ body{
 }
 header {
     padding-top: 73px;
+    padding-bottom: 27px;
 }
 
 .menu{
     margin: 0 auto;
     padding: 0;
-    padding-bottom: 27px;
     box-sizing: border-box;
     width: 590px;
     font-size: 0;
@@ -60,7 +60,6 @@ h5{
     font-weight: lighter;
     color: #c7c1b6;
     text-transform: uppercase;
-    padding-top: 5px;
 }
 img{
     width: 420px;
@@ -75,26 +74,22 @@ img{
     margin-right: 60px;
 }
 h2{
-    margin-top: 0;
     margin-bottom: 30px;
     font-size: 30px;
     line-height: 25px;
     color: #626262;
 }
 p{
-    margin: 0;
-    padding-top: 4px;
     font-size: 14px;
     line-height: 24px;
     color: #626262;
 }
 footer{
     margin-bottom: 70px;
-    margin-right: 38px;
 }
 button{
     display: block;
-    margin: 0 auto;
+    margin-left: 660px;
     padding: 17px 0;
     width: 164px;
     background-color: #ffffff;
