@@ -1,0 +1,30 @@
+.menu {
+    float: right;
+    list-style: none;
+    width: 800px;
+    padding: 0;
+    margin: 0;
+}
+.menu-item {
+   float: left;
+   color: #0E1116;
+   padding-left: 10px;
+   cursor: pointer;  
+}
+.menu-item::before {
+    content: "\2192";	
+
+}
+.menu-item:nth-child(3n-2) {
+    background-color: #88292F;
+}
+.menu-item:nth-child(3n-1) {
+    background-color: #5DB7DE;
+}
+.menu-item:nth-child(3n) {
+    background-color: #0D5D56;
+}
+.menu-item:hover {
+    color: red
+}
+
