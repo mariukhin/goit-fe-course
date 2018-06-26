@@ -42,17 +42,18 @@ main{
 }
 section{
     margin: 0 auto;
-    padding-bottom: 130px;
+    padding-bottom: 132px;
     width: 920px;
     font-size: 0;
 }
 section:last-child{
     margin: 0 auto;
-    padding-bottom: 37px;
+    padding-bottom: 40px;
     width: 920px;
     font-size: 0;
 }
 h5{
+    margin-bottom: 30px;
     font-family: 'Ubuntu', sans-serif;
     font-size: 14px;
     font-stretch: semi-condensed;
@@ -73,7 +74,8 @@ img{
     margin-right: 60px;
 }
 h2{
-    margin-bottom: 30px;
+    margin: 0;
+    margin-bottom: 32px;
     font-size: 30px;
     line-height: 25px;
     color: #626262;
@@ -84,11 +86,12 @@ p{
     color: #626262;
 }
 footer{
-    height: 100px;
-}
+    padding-bottom: 60px;
+} 
 button{
     display: block;
-    margin-left: 660px;
+    margin: 0 auto;
+    margin-right: 695px;
     padding: 17px 0;
     width: 164px;
     background-color: #ffffff;
