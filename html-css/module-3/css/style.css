@@ -42,18 +42,21 @@ main{
 }
 section{
     margin: 0 auto;
-    padding-bottom: 132px;
+    padding-bottom: 127px;
     width: 920px;
     font-size: 0;
 }
+section:nth-child(2){
+    padding-bottom: 135px;
+}
 section:last-child{
     margin: 0 auto;
-    padding-bottom: 40px;
+    padding-bottom: 52px;
     width: 920px;
     font-size: 0;
 }
 h5{
-    margin-bottom: 30px;
+    margin-bottom: 32px;
     font-family: 'Ubuntu', sans-serif;
     font-size: 14px;
     font-stretch: semi-condensed;
@@ -81,6 +84,7 @@ h2{
     color: #626262;
 }
 p{
+    margin: 0;
     font-size: 14px;
     line-height: 24px;
     color: #626262;
@@ -91,7 +95,6 @@ footer{
 button{
     display: block;
     margin: 0 auto;
-    margin-right: 695px;
     padding: 17px 0;
     width: 164px;
     background-color: #ffffff;
