@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:900');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:600');
+@import url('https://fonts.googleapis.com/css?family=Roboto:900,400,300');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700,600,400,300');
 body{
     margin: 0;
-    font-family: 'Roboto', sans-serif;
 }
 .page-header{
     padding-top: 38px; 
@@ -11,6 +10,7 @@ body{
     float: right;
     list-style: none;
     padding-right: 275px;
+    padding-top: 5px;
     margin: 0;
 }
 .menu-item {
@@ -24,8 +24,11 @@ body{
 }
 .item-link{
     text-decoration: none;
-    font-size: 13px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 32px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.28px;
     text-transform: uppercase;
     color: #0f0101;  
 }
@@ -37,16 +40,21 @@ body{
     text-decoration: none;
     padding-left: 260px;
     font-size: 30px;
+    font-weight: 300;
     line-height: 32px;
+    font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
+    letter-spacing: -0.6px;
     color: #605e5e;  
 }
-.logo::before{
-    content: "M";
+.logo::first-letter{
+    content: '';
     text-decoration: none;
     font-size: 30px;
     line-height: 32px;
+    font-weight: 400;
     text-transform: uppercase;
+    letter-spacing: -0.6px;
     color: #1abc9c;  
 }
 .clearfix::after{
@@ -57,41 +65,43 @@ body{
 
 .products, .news{
     width: 1110px;
-    padding-top: 80px;
+    padding-top: 48px;
     margin: 0 auto;
 }
 .news{
     padding-top: 75px;
+    font-family: 'Open Sans', sans-serif;
+
 }
 .section-name, .topic-title{
-    font-size: 48px;
-    padding-left: 320px;
+    text-align: center;
+    font-size: 38px;
     margin-bottom: 94px;
     line-height: 32px;
+    font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     color: #515151;
 }
 .topic-title{
-    padding-left: 400px;
     margin-bottom: 81px;
 }
 .section-name::after{
     display: block;
-    width: 165px;
+    width: 138px;
     height: 7px;
     background-color: #1abc9c;
     content: '';
     margin-top: 33px;
-    margin-left: 154px;
+    margin-left: 478px;
 }
 .topic-title::after{
     display: block;
-    width: 165px;
+    width: 138px;
     height: 7px;
     background-color: #1abc9c;
     content: '';
     margin-top: 33px;
-    margin-left: 80px;
+    margin-left: 484px;
 }
 .product-list, .news-list{
     padding: 0;
@@ -104,7 +114,6 @@ body{
 }
 .product-item{
     float: left;
-    width: 255px;
     margin-bottom: 30px;
 }
 .news-item{
@@ -119,7 +128,7 @@ body{
 }
 img{
     width: 255px;
-    height: 282px;
+    height: 264px;
 }
 .product-link{
     display: block;
@@ -131,6 +140,7 @@ img{
     line-height: 32px;
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
+    font-weight: 900;
     text-transform: uppercase;
     text-decoration: none;
     text-align: left;
@@ -140,11 +150,18 @@ img{
     background-color: #1abc9c;
     border: 1px solid  #1abc9c;
 }
+.content:hover .prod-price{
+    background-color: #7fd9c7;
+}
 .prod-price{
     display: block;
     float: right;
     width: 30px;
-    padding: 11px 12px 10px;
+    padding: 4px 12px 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 400;
     background-color: #8c8c8c;
     color: #ffffff;
 }
@@ -162,7 +179,6 @@ img{
     margin-top: 15px; 
     font-size: 18px;
     line-height: 26px;
-    font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     color: #555252;
 }
@@ -180,7 +196,6 @@ p{
     margin-bottom: 19px;
     font-size: 14px;
     line-height: 26px;
-    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     color: #555252; 
 }
@@ -190,7 +205,6 @@ p{
     padding: 11px 43px;
     font-size: 16px;
     line-height: 26px;
-    font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     color: #f3fbf9;
     border: 1px solid #1abc9c;
