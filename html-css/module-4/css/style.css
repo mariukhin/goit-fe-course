@@ -4,23 +4,22 @@ body{
     margin: 0;
 }
 .page-header{
-    padding-top: 38px; 
+    padding-top: 53px; 
 }
 .menu {
     float: right;
     list-style: none;
-    padding-right: 275px;
-    padding-top: 5px;
+    padding-right: 150px;
     margin: 0;
 }
 .menu-item {
    float: left;
    color: #0E1116;
-   padding-left: 36px;
+   padding-right: 36px;
    cursor: pointer;  
 }
-.menu-item:first-child{
-    padding-left: 0;
+.menu-item:last-child{
+    padding-right: 0;
 }
 .item-link{
     text-decoration: none;
@@ -66,7 +65,7 @@ body{
 .products, .news{
     width: 1110px;
     padding-top: 48px;
-    margin: 0 auto;
+    margin-left: 262px;
 }
 .news{
     padding-top: 75px;
@@ -74,8 +73,8 @@ body{
 
 }
 .section-name, .topic-title{
-    text-align: center;
-    font-size: 38px;
+    padding-left: 315px;
+    font-size: 48px;
     margin-bottom: 94px;
     line-height: 32px;
     font-family: 'Roboto', sans-serif;
@@ -83,25 +82,26 @@ body{
     color: #515151;
 }
 .topic-title{
-    margin-bottom: 81px;
+    padding-left: 390px;    
+    margin-bottom: 80px;
 }
 .section-name::after{
     display: block;
-    width: 138px;
+    width: 165px;
     height: 7px;
     background-color: #1abc9c;
     content: '';
     margin-top: 33px;
-    margin-left: 478px;
+    margin-left: 160px;
 }
 .topic-title::after{
     display: block;
-    width: 138px;
+    width: 165px;
     height: 7px;
     background-color: #1abc9c;
     content: '';
     margin-top: 33px;
-    margin-left: 484px;
+    margin-left: 75px;
 }
 .product-list, .news-list{
     padding: 0;
@@ -123,12 +123,13 @@ body{
 .product-item:not(:nth-child(4n)){
     margin-right: 30px;
 }
+
 .news-item:not(:nth-child(3n)){
     margin-right: 30px;
 }
 img{
     width: 255px;
-    height: 264px;
+    height: 275px;
 }
 .product-link{
     display: block;
@@ -176,7 +177,6 @@ img{
 
 .title{
     margin: 0;
-    margin-top: 15px; 
     font-size: 18px;
     line-height: 26px;
     font-weight: 600;
@@ -185,15 +185,15 @@ img{
 .title::after{
     display: block;
     width: 136px;
-    height: 7px;
+    height: 3px;
     background-color: #1abc9c;
     content: '';
-    margin-top: 15px;
-    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 22px;
 }
 p{
     margin: 0;
-    margin-bottom: 19px;
+    margin-bottom: 14px;
     font-size: 14px;
     line-height: 26px;
     font-weight: 400;
@@ -202,7 +202,7 @@ p{
 .readmore{
     margin: 0;
     margin-bottom: 81px;
-    padding: 11px 43px;
+    padding: 11px 39px;
     font-size: 16px;
     line-height: 26px;
     font-weight: 300;
@@ -210,6 +210,7 @@ p{
     border: 1px solid #1abc9c;
     background-color: #1abc9c; 
     border-radius: 2.5px;
+    cursor: pointer; 
 }
 /* .menu-item::before {
     content: "\2192";	
