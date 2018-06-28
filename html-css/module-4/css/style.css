@@ -3,24 +3,28 @@
 body{
     margin: 0;
 }
+.wrapper{
+    width: 1110px;
+    margin: 0 auto;
+}
 .page-header{
-    padding-top: 53px; 
+    padding-top: 53px;
+    margin-bottom: 60px; 
 }
 .menu {
     float: right;
-    width: 475px;
+    width: 480px;
     list-style: none;
-    padding-right: 140px;
     margin: 0;
 }
 .menu-item {
    float: left;
    color: #0E1116;
-   padding-right: 31px;
+   margin-right: 31px;
    cursor: pointer;  
 }
 .menu-item:last-child{
-    padding-right: 0;
+    margin-right: 0;
 }
 .item-link{
     text-decoration: none;
@@ -38,7 +42,6 @@ body{
 .logo{
     float: left;
     text-decoration: none;
-    padding-left: 260px;
     font-size: 30px;
     font-weight: 300;
     line-height: 32px;
@@ -52,7 +55,7 @@ body{
     text-decoration: none;
     font-size: 30px;
     line-height: 32px;
-    font-weight: 600;
+    font-weight: 900;
     text-transform: uppercase;
     letter-spacing: -0.6px;
     color: #1abc9c;  
@@ -63,13 +66,10 @@ body{
     clear: both;
 }
 
-.products, .news{
-    width: 1110px;
-    padding-top: 60px;
-    margin-left: 262px;
+.products{
+    margin-bottom: 90px; 
 }
 .news{
-    padding-top: 40px;
     font-family: 'Open Sans', sans-serif;
 
 }
@@ -107,21 +107,21 @@ body{
 .product-list, .news-list{
     padding: 0;
     margin: 0;
-    list-style: none;
 }
 .content{
+    float: left;
+    margin-bottom: 30px;
     width: 255px;
     background-color: #e9f0fd;
 }
-.product-item{
-    float: left;
-    margin-bottom: 30px;
+.product-list:last-child .content{
+    margin-bottom: 0;
 }
 .news-item{
     float: left;
     width: 350px;
 }
-.product-item:not(:nth-child(4n)){
+.content:not(:nth-child(4n)){
     margin-right: 30px;
 }
 
