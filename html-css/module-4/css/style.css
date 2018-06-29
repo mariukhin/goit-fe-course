@@ -8,8 +8,8 @@ body{
     margin: 0 auto;
 }
 .page-header{
-    padding-top: 53px;
-    margin-bottom: 60px; 
+    padding-top: 38px;
+    margin-bottom: 105px; 
 }
 .menu {
     float: right;
@@ -67,7 +67,7 @@ body{
 }
 
 .products{
-    margin-bottom: 90px; 
+    margin-bottom: 105px; 
 }
 .news{
     font-family: 'Open Sans', sans-serif;
