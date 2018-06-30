@@ -12,12 +12,15 @@ body{
     height: var(--width-height);
     background-color: var(--back);
 }
-.sec1{
+.sec1, .sec2, .sec3, .sec4, .sec5, .sec6, 
+.sec7, .sec8, .sec9{
     position: absolute;
-    left: 0;
-    top: 0;
     width: var(--sec-w-h);
     height: var(--sec-w-h);
+}
+.sec1{
+    left: 0;
+    top: 0;
     background-color: blue;
 }
 .sec2{
@@ -29,59 +32,38 @@ body{
     background-color: green;
 }
 .sec3{
-    position: absolute;
     left: 300px;
     top: 0;
-    width: var(--sec-w-h);
-    height: var(--sec-w-h);
     background-color: pink;
 }
 .sec4{
-    position: absolute;
     left: 0;
     top: 150px;
-    width: var(--sec-w-h);
-    height: var(--sec-w-h);
     background-color: red;
 }
 .sec5{
-    position: absolute;
     left: 150px;
     top: 150px;
-    width: var(--sec-w-h);
-    height: var(--sec-w-h);
     background-color: orange;
 }
 .sec6{
-    position: absolute;
     left: 300px;
     top: 150px;
-    width: var(--sec-w-h);
-    height: var(--sec-w-h);
     background-color: violet;
 }
 .sec7{
-    position: absolute;
     left: 0;
     top: 300px;
-    width: var(--sec-w-h);
-    height: var(--sec-w-h);
     background-color: blue;
 }
 .sec8{
-    position: absolute;
     left: 150px;
     top: 300px;
-    width: var(--sec-w-h);
-    height: var(--sec-w-h);
     background-color: yellow;
 }
 .sec9{
-    position: absolute;
     left: 300px;
     top: 300px;
-    width: var(--sec-w-h);
-    height: var(--sec-w-h);
     background-color: blue;
 }
 /* main{
