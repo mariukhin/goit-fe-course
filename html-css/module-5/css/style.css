@@ -1,4 +1,87 @@
-:root{
+@import url('https://fonts.googleapis.com/css?family=Roboto:900,600,400,300');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700,600,400,300');
+body{
+    margin: 0; 
+}
+.page-header{
+    /* margin-bottom: 101px;  */
+    height: 91px;
+}
+.wrapper{
+    width: 1110px;
+    margin: 0 auto;
+}
+.nav{
+    position: relative;
+    width: 100%;
+}
+.menu{
+    position: absolute;
+    right: 0;
+    top:44px;
+    list-style: none;
+    margin: 0;
+}
+.menu-item {
+    display: inline-block;
+    color: #0E1116;
+    margin-right: 31px;
+    cursor: pointer;  
+ }
+.menu-item:last-child{
+    margin-right: 0;
+}
+.item-link{
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 32px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.28px;
+    text-transform: uppercase;
+    color: #0f0101;  
+}
+.item-link:hover{
+    color: #1abc9c;
+}
+.logo{
+    position: absolute;
+    top: 40px;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 32px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -0.6px;
+    color: #605e5e;  
+}
+.logo::first-letter{
+    content: '';
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -0.6px;
+    color: #1abc9c;  
+}
+main{
+    position: relative;
+}
+.slider{
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    background-color: black;
+}
+
+
+
+
+
+
+/* :root{
     --width-height: 400px;
     --back: #424242;
     --sec-w-h:100px;
@@ -72,4 +155,4 @@ body{
     background-image: url("../img/nastol1.jpg");
     background: linear-gradient(rgba(0 , 0, 0, 0.3));
     background-position: center;
-} */
+} */ 
