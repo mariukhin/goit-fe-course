@@ -9,7 +9,7 @@ body{
 }
 .page-header{
     padding-top: 38px;
-    margin-bottom: 105px; 
+    margin-bottom: 101px; 
 }
 .menu {
     float: right;
@@ -67,7 +67,7 @@ body{
 }
 
 .products{
-    padding-bottom: 105px; 
+    padding-bottom: 65px; 
 }
 .news{
     font-family: 'Open Sans', sans-serif;
