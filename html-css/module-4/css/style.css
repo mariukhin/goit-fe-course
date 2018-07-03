@@ -8,8 +8,8 @@ body{
     margin: 0 auto;
 }
 .page-header{
-    padding-top: 38px;
-    margin-bottom: 101px; 
+    margin-top: 38px;
+    padding-bottom: 101px; 
 }
 .menu {
     float: right;
@@ -74,11 +74,11 @@ body{
 
 }
 .section-name, .topic-title{
-    padding-top: 3px;
+    margin: 0;
     text-align: center;
     font-size: 48px;
     margin-bottom: 94px;
-    line-height: 32px;
+    line-height: 38px;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     color: #515151;

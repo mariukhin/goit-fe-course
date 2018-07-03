@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:700,600,400,300');
 :root{
     --wh-button: 104px;
+    --salatoviy: #1abc9c;
 }
 body{
     margin: 0; 
@@ -66,7 +67,7 @@ body{
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: -0.6px;
-    color: #1abc9c;  
+    color: var(--salatoviy);  
 }
 
 
@@ -105,18 +106,18 @@ body{
 
 .sl-button{
     position: absolute;
-    background-color: #1abc9c;
+    background-color: var(--salatoviy);
     opacity: 0.7;
     border: 0;
     width: var(--wh-button);
     height: var(--wh-button);
     cursor: pointer;
 }
-.b-left{
+.btn-left{
     top: 225px;
     left: 245px;
 }
-.b-right{
+.btn-right{
     top: 225px;
     right: 245px;
 }
@@ -141,7 +142,7 @@ body{
     display: block;
     width: 165px;
     height: 7px;
-    background-color: #1abc9c;
+    background-color: var(--salatoviy);
     content: '';
     margin: 0 auto;
     margin-top: 33px;
@@ -168,13 +169,41 @@ body{
 }
 .hover-container{
     position: absolute;
-    top: 13px;
+    top: 11px;
     left: 10px;
     opacity: 0;
     width: 235px;
     height: 260px;
-    background-color: #737373;
+    background-color: #323232;
 }
+.btn-like, .btn-change, .btn-time,.btn-add{
+    position: absolute;
+    top: 85px;
+    border: 1px solid #ffffff;
+    margin: 0;
+    padding: 0;
+    width: 47px;
+    height: 47px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.btn-like{
+    left: 43px;
+}
+
+.btn-change{
+    left: 95px;
+}
+.btn-time{
+    right: 39px;
+}
+.btn-add{
+    top: 140px;
+    left: 43px; 
+    width: 154px;
+    background-color: #323232;
+}
+
 .card-photo{
     height: 281px;
     width: 255px;
@@ -196,14 +225,19 @@ body{
     border: 1px solid #323232;
 }
 .card:hover .card-link{
-    background-color: #1abc9c;
-    border: 1px solid  #1abc9c;
+    background-color: var(--salatoviy);
+    border: 1px solid  var(--salatoviy);
 }
 .card:hover .card-price{
     background-color: #7fd9c7;
 }
 .card:hover .hover-container{
-    opacity: 0.7;
+    opacity: 0.8;
+}
+.btn-like:hover, .btn-change:hover,
+.btn-time:hover{
+    background-color: var(--salatoviy);
+    border: 1px solid  var(--salatoviy);
 }
 .card-price{
     position: absolute;
@@ -221,6 +255,23 @@ body{
 .card-price::before{
     content: "\0024";
 }
+
+
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 /* :root{
     --width-height: 400px;
     --back: #424242;
