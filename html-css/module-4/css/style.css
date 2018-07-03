@@ -8,7 +8,7 @@ body{
     margin: 0 auto;
 }
 .page-header{
-    margin-top: 38px;
+    padding-top: 38px;
     padding-bottom: 101px; 
 }
 .menu {
