@@ -182,7 +182,7 @@ img{
     margin: 0;
     margin-bottom: 22px;
     font-size: 18px;
-    line-height: 27px;
+    line-height: 28px;
     font-weight: 600;
     color: #555252;
 }
@@ -192,11 +192,11 @@ img{
     height: 3px;
     background-color: #1abc9c;
     content: '';
-    margin-top: 10px;
+    margin-top: 8px;
 }
 p{
     margin: 0;
-    margin-bottom: 14px;
+    margin-bottom: 12px;
     font-size: 14px;
     line-height: 26px;
     font-weight: 400;
