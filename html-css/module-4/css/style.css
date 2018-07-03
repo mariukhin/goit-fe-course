@@ -182,7 +182,7 @@ img{
     margin: 0;
     margin-bottom: 22px;
     font-size: 18px;
-    line-height: 26px;
+    line-height: 27px;
     font-weight: 600;
     color: #555252;
 }
@@ -214,20 +214,5 @@ p{
     border-radius: 2.5px;
     cursor: pointer; 
 }
-/* .menu-item::before {
-    content: "\2192";	
 
-}
-.menu-item:nth-child(3n-2) {
-    background-color: #88292F;
-}
-.menu-item:nth-child(3n-1) {
-    background-color: #5DB7DE;
-}
-.menu-item:nth-child(3n) {
-    background-color: #0D5D56;
-}
-.menu-item:hover {
-    color: red
-} */
 

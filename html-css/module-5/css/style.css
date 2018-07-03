@@ -8,7 +8,7 @@ body{
     margin: 0; 
 }
 .page-header{
-    height: 91px;
+    height: 90px;
 }
 .wrapper{
     width: 1110px;
@@ -21,7 +21,7 @@ body{
 .menu{
     position: absolute;
     right: 0;
-    top: 44px;
+    top: 43px;
     list-style: none;
     margin: 0;
 }
@@ -37,7 +37,7 @@ body{
 .item-link{
     text-decoration: none;
     font-size: 14px;
-    line-height: 32px;
+    line-height: 11px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     letter-spacing: -0.28px;
@@ -49,7 +49,7 @@ body{
 }
 .logo{
     position: absolute;
-    top: 40px;
+    top: 33px;
     text-decoration: none;
     font-size: 30px;
     font-weight: 300;
@@ -85,20 +85,21 @@ body{
 }
 .sl-title{
     position: absolute;
-    top: 190px;
-    left: 430px;
-    font-size: 52px;
-    line-height: 32px;
-    font-family: 'Open Sans', sans-serif;
+    top: 170px;
+    left: 432px;
+    font-size: 50px;
+    line-height: 62px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
     text-transform: uppercase;
     color: #ffffff;
 }
 .sl-desc{
     position: absolute;
-    top: 270px;
-    left: 430px;
-    font-size: 18px;
-    line-height: 32px;
+    top: 250px;
+    left: 432px;
+    font-size: 20px;
+    line-height: 54px;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     color: #ffffff;
@@ -130,29 +131,30 @@ body{
 .section-name{
     position: absolute;
     top: 101px;
-    left: 580px;
+    left: 570px;
     margin: 0;
     font-size: 48px;
-    line-height: 32px;
+    line-height: 36px;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     color: #515151;
 }
 .section-name::after{
     display: block;
-    width: 165px;
+    width: 166px;
     height: 7px;
     background-color: var(--salatoviy);
     content: '';
     margin: 0 auto;
-    margin-top: 33px;
+    margin-top: 31px;
 }
 
 .collection-list{
     position: absolute;
     top: 255px;
-    left: 245px;
+    left: 210px;
     width: 1110px;
+    height: 320px;
 }
 .card{
     display: inline-block;
@@ -201,6 +203,12 @@ body{
     top: 140px;
     left: 43px; 
     width: 154px;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 32px;
+    text-transform: uppercase;
     background-color: #323232;
 }
 
@@ -255,6 +263,30 @@ body{
 .card-price::before{
     content: "\0024";
 }
+
+
+footer{
+    position: relative;
+    height: 90px;
+    background-color: #323232;
+}
+.footer-text{
+    position: absolute;
+    margin: 0;
+    top: 39px;
+    left: 575px;
+    color: #fefefe;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+.footer-text::after{
+    content: 'ThemenGraph';
+    color: #46bfa9;
+}
+
+
+
 
 
 .visually-hidden:not(:focus):not(:active),
