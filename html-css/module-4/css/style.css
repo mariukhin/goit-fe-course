@@ -15,6 +15,7 @@ body{
     float: right;
     width: 480px;
     list-style: none;
+    padding: 0;
     margin: 0;
 }
 .menu-item {
@@ -108,28 +109,28 @@ body{
 .product-list, .news-list{
     padding: 0;
     margin: 0;
+    padding-bottom: 30px;
+}
+.news-list{
+    padding-bottom: 81px;
 }
 .content{
     float: left;
-    margin-bottom: 30px;
     width: 255px;
     background-color: #e9f0fd;
 }
-.product-list:last-child .content{
-    margin-bottom: 0;
+.product-list:last-child{
+    padding-bottom: 0;
 }
 .news-item{
     float: left;
-    margin-bottom: 81px;
     width: 350px;
 }
-.content:not(:nth-child(4n)){
-    margin-right: 30px;
-}
-
+.content:not(:nth-child(4n)),
 .news-item:not(:nth-child(3n)){
     margin-right: 30px;
 }
+
 img{
     width: 255px;
     height: 275px;
