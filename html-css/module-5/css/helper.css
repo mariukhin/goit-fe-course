@@ -20,7 +20,9 @@
   color: #ffffff;
 }
 .pe-3x {
-  font-size: 3em;
+  font-size: 2.5em;
+  padding-right: 10px;
+  color: #ffffff;
 }
 .pe-4x {
   font-size: 4em;
@@ -66,7 +68,7 @@
   float: left;
 }
 .pe.pull-left {
-  margin-right: .3em;
+  margin-right: .2em;
 }
 .pe.pull-right {
   margin-left: .3em;

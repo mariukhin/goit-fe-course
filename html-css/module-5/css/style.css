@@ -21,9 +21,10 @@ body{
 .menu{
     position: absolute;
     right: 0;
-    top: 43px;
+    top: 39px;
     list-style: none;
     margin: 0;
+    padding: 0;
 }
 .menu-item {
     display: inline-block;
@@ -85,10 +86,11 @@ body{
 }
 .sl-title{
     position: absolute;
-    top: 170px;
+    margin: 0;
+    top: 218px;
     left: 432px;
-    font-size: 50px;
-    line-height: 62px;
+    font-size: 60px;
+    line-height: 45px;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     text-transform: uppercase;
@@ -96,10 +98,11 @@ body{
 }
 .sl-desc{
     position: absolute;
-    top: 250px;
-    left: 432px;
-    font-size: 20px;
-    line-height: 54px;
+    margin: 0;
+    top: 298px;
+    left: 431px;
+    font-size: 25px;
+    line-height: 20px;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     color: #ffffff;
@@ -120,7 +123,7 @@ body{
 }
 .btn-right{
     top: 225px;
-    right: 245px;
+    right: 160px;
 }
 
 .collection{
@@ -130,7 +133,7 @@ body{
 }
 .section-name{
     position: absolute;
-    top: 101px;
+    top: 100px;
     left: 570px;
     margin: 0;
     font-size: 48px;
@@ -168,10 +171,11 @@ body{
 
 .card-content{
     position: relative;
+    height: 280px;
 }
 .hover-container{
     position: absolute;
-    top: 11px;
+    top: 10px;
     left: 10px;
     opacity: 0;
     width: 235px;
@@ -180,29 +184,29 @@ body{
 }
 .btn-like, .btn-change, .btn-time,.btn-add{
     position: absolute;
-    top: 85px;
+    top: 77px;
     border: 1px solid #ffffff;
     margin: 0;
     padding: 0;
-    width: 47px;
-    height: 47px;
+    width: 50px;
+    height: 50px;
     background-color: transparent;
     cursor: pointer;
 }
 .btn-like{
-    left: 43px;
+    left: 37px;
 }
 
 .btn-change{
     left: 95px;
 }
 .btn-time{
-    right: 39px;
+    right: 33px;
 }
 .btn-add{
     top: 140px;
-    left: 43px; 
-    width: 154px;
+    left: 37px; 
+    width: 165px;
     color: #ffffff;
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
@@ -210,10 +214,11 @@ body{
     line-height: 32px;
     text-transform: uppercase;
     background-color: #323232;
+    background: linear-gradient(rgb(0, 0, 0, 1), rgb(0, 0, 0, 1));
 }
 
 .card-photo{
-    height: 281px;
+    height: 280px;
     width: 255px;
 }
 .card-link{
@@ -221,9 +226,9 @@ body{
     top: 280px;
     width: 179px;
     background-color: #323232;
-    padding: 3px 10px;
+    padding: 13px 10px 8px;
     font-size: 18px;
-    line-height: 32px;
+    line-height: 16px;
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
@@ -252,7 +257,7 @@ body{
     top: 280px;
     right: 0;
     width: 30px;
-    padding: 4px 12px 4px;
+    padding: 4px 12px 3px;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     line-height: 32px;
@@ -273,11 +278,12 @@ footer{
 .footer-text{
     position: absolute;
     margin: 0;
-    top: 39px;
+    top: 38px;
     left: 575px;
     color: #fefefe;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
+    line-height: 13px;
     font-weight: 400;
 }
 .footer-text::after{
