@@ -132,6 +132,7 @@ body{
 }
 
 img{
+    display: block;
     width: 255px;
     height: 275px;
 }
@@ -175,6 +176,7 @@ img{
 }
 
 .news-img{
+    display: block;
     width: 350px;
     height: 263px;
 }
@@ -199,7 +201,7 @@ p{
     margin: 0;
     margin-bottom: 12px;
     font-size: 14px;
-    line-height: 26px;
+    line-height: 20px;
     font-weight: 400;
     color: #555252; 
 }

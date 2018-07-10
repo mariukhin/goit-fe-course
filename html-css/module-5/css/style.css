@@ -8,26 +8,26 @@ body{
     margin: 0; 
 }
 .page-header{
-    height: 90px;
+    padding-top: 33px;
 }
 .wrapper{
     width: 1110px;
     margin: 0 auto;
 }
-.nav{
-    position: relative;
-    width: 100%;
+.page-top{
+    min-height: 32px;
+    margin-bottom: 27px;
 }
 .menu{
-    position: absolute;
-    right: 0;
-    top: 39px;
+    float: right;
+    width: 480px;
     list-style: none;
     margin: 0;
     padding: 0;
+    padding-top: 5px;
 }
 .menu-item {
-    display: inline-block;
+    float: left;
     color: #0E1116;
     margin-right: 31px;
     cursor: pointer;  
@@ -49,8 +49,7 @@ body{
     color: #1abc9c;
 }
 .logo{
-    position: absolute;
-    top: 33px;
+    float: left;
     text-decoration: none;
     font-size: 30px;
     font-weight: 300;
@@ -70,25 +69,32 @@ body{
     letter-spacing: -0.6px;
     color: var(--salatoviy);  
 }
-
+.clearfix::after{
+    display: table;
+    content: '';
+    clear: both;
+}
 
 
 .slider{
+    position: relative;
     width: 100%;
     height: 600px;
     background-image: url("../img/slider1.png");
 }
-.slider-content{
-    position: relative;
+.slider::before{
+    position: absolute;
+    content: '';
+    display: block;
     width: 100%;
     height: 600px;
     background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5));
 }
 .sl-title{
     position: absolute;
-    margin: 0;
     top: 218px;
-    left: 432px;
+    left: 420px;
+    margin: 0;
     font-size: 60px;
     line-height: 45px;
     font-family: 'Roboto', sans-serif;
@@ -98,9 +104,9 @@ body{
 }
 .sl-desc{
     position: absolute;
+    top: 297px;
+    left: 420px;
     margin: 0;
-    top: 298px;
-    left: 431px;
     font-size: 25px;
     line-height: 20px;
     font-family: 'Roboto', sans-serif;
@@ -127,17 +133,16 @@ body{
 }
 
 .collection{
-    position: relative;
-    height: 676px;
+    padding-bottom: 101px;
     background-color: #e9f0fd;
 }
 .section-name{
-    position: absolute;
-    top: 100px;
-    left: 570px;
     margin: 0;
+    padding-top: 100px;
+    margin-bottom: 82px;
+    text-align: center;
     font-size: 48px;
-    line-height: 36px;
+    line-height: 38px;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     color: #515151;
@@ -149,18 +154,16 @@ body{
     background-color: var(--salatoviy);
     content: '';
     margin: 0 auto;
-    margin-top: 31px;
+    margin-top: 29px;
 }
 
 .collection-list{
-    position: absolute;
-    top: 255px;
-    left: 210px;
-    width: 1110px;
     height: 320px;
+
 }
 .card{
     display: inline-block;
+    position: relative;
     margin: 0;
     width: 255px;
 }
@@ -169,13 +172,9 @@ body{
     margin-right: 26px;
 }
 
-.card-content{
-    position: relative;
-    height: 280px;
-}
 .hover-container{
     position: absolute;
-    top: 10px;
+    top: 9px;
     left: 10px;
     opacity: 0;
     width: 235px;
@@ -184,7 +183,7 @@ body{
 }
 .btn-like, .btn-change, .btn-time,.btn-add{
     position: absolute;
-    top: 77px;
+    top: 78px;
     border: 1px solid #ffffff;
     margin: 0;
     padding: 0;
@@ -204,12 +203,12 @@ body{
     right: 33px;
 }
 .btn-add{
-    top: 140px;
+    top: 136px;
     left: 37px; 
     width: 165px;
     color: #ffffff;
     font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 32px;
     text-transform: uppercase;
@@ -218,12 +217,13 @@ body{
 }
 
 .card-photo{
+    display: block;
     height: 280px;
     width: 255px;
 }
 .card-link{
-    position: absolute;
-    top: 280px;
+    display: block;
+    float: left;
     width: 179px;
     background-color: #323232;
     padding: 13px 10px 8px;
@@ -253,14 +253,13 @@ body{
     border: 1px solid  var(--salatoviy);
 }
 .card-price{
-    position: absolute;
-    top: 280px;
-    right: 0;
+    display: block;
+    float: right;
     width: 30px;
-    padding: 4px 12px 3px;
+    padding: 10px 12px 9px;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
-    line-height: 32px;
+    line-height: 20px;
     font-weight: 600;
     background-color: #8c8c8c;
     color: #ffffff;
@@ -271,15 +270,14 @@ body{
 
 
 footer{
-    position: relative;
-    height: 90px;
+    width: 100%;
     background-color: #323232;
 }
 .footer-text{
-    position: absolute;
     margin: 0;
-    top: 38px;
-    left: 575px;
+    text-align: center;
+    padding-top: 38px;
+    padding-bottom: 33px; 
     color: #fefefe;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
