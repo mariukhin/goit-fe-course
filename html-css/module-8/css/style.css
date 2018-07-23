@@ -1,0 +1,337 @@
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('../fonts/montserrat-v12-latin-regular.woff2') format('woff2'),
+         url('../fonts/montserrat-v12-latin-regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+         url('../fonts/montserrat-v12-latin-700.woff2') format('woff2'),
+         url('../fonts/montserrat-v12-latin-700.woff') format('woff');
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Roboto Light'), local('Roboto-Light'),
+         url('../fonts/roboto-v18-latin-300.woff2') format('woff2'),
+         url('../fonts/roboto-v18-latin-300.woff') format('woff');
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'),
+         url('../fonts/roboto-v18-latin-regular.woff2') format('woff2'),
+         url('../fonts/roboto-v18-latin-regular.woff') format('woff');
+  }
+
+.header{
+    width: 100%;
+    height: 33.75rem;
+}
+.login, .signup{
+    display: inline-block;
+    border: 0;
+    background-color: transparent;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1rem;
+    color: #ffffff; 
+}
+.signup{
+    border: 0.125rem solid #ffffff;
+    padding: 0.75rem 1.1875rem 0.625rem;
+    border-radius: 1.5rem;
+}
+.logo{
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.375rem;
+    text-transform: uppercase;
+    color: #ffffff; 
+}
+.title{
+    margin: 0;
+    font-family: 'Montserrat';
+    font-size: 1.875rem;
+    font-weight: 700;
+    line-height: 2.3rem;
+    text-transform: uppercase;
+    color: #ffffff; 
+}
+.subtitle{
+    margin: 0;
+    font-family: 'Roboto';
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.25rem;
+    color: #ffffff;
+}
+.find, .see-partners{
+    border: 0;
+    border: 0.0625rem solid #ff4e50;
+    padding: 0.75rem 2.75rem 0.75rem;
+    border-radius: 1.25rem;
+    background-color: #ff4e50;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1rem;
+    color: #ffffff;
+}
+.see-partners{
+    border: 0.125rem solid #ff4e50;
+    padding: 0.65rem 4.2rem 0.65rem;
+    background-color: transparent;
+    color: #ff4e50;
+}
+.card-photo{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1.25rem
+}
+.meet-colect{
+    text-align: center;
+}
+.meet-card{
+    position: relative;
+}
+.meet-title{
+    margin: 0;
+    font-family: 'Montserrat';
+    font-size: 1.375rem;
+    font-weight: 700;
+    line-height: 1.5625rem;
+    color: #333333;
+}
+.card-title{
+    margin: 0;
+    margin-bottom: 1rem;
+    font-family: 'Montserrat';
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1rem;
+    color: #333333;
+}
+.card-descr{
+    margin: 0;
+    font-family: 'Roboto';
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1rem;
+    color: #666666;
+}
+.circle{
+    position: absolute;
+    top: 5.5625rem;
+    right: 2.7rem;
+    width: 2.0625rem;
+    height: 2.0625rem;
+    border: 0.25rem solid #ffffff;
+    border-radius: 1.25rem;
+    background-color: #ff4e50;
+}
+.meet-card:nth-of-type(2) .circle{
+    background-color: #ffa507;
+}
+.meet-card:nth-of-type(3) .circle{
+    background-color: #1cd7ad;
+}
+.meet-card:last-of-type .circle{
+    background-color: #4e73db;
+}
+.card-icon{
+    padding-top: 0.5rem;
+}
+@media screen and (min-width: 320px){
+    .header{
+        text-align: center;
+        background-image: url('../img/photo-mobile.jpg');
+        background-position: top;
+        background-repeat: no-repeat;
+        padding-bottom: 4.3125rem;
+    }
+    .menu{
+        padding-top: 1.25rem;
+        padding-bottom: 7.1875rem; 
+    }
+    .title{
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .subtitle{
+        padding-left: 3rem;
+        padding-right: 3rem;
+        margin-bottom: 1rem;
+    }  
+    .meet-container{
+        margin: 0 auto;
+        width: 68.75%;
+        margin-bottom: 1.8125rem;
+    }
+    .meet-card:not(:last-of-type){
+        margin-bottom: 1.75rem;
+    }
+    .meet-title{
+        margin-bottom: 0.9375rem;
+    }
+    .card-photo{
+        width: 7.5625rem;
+        height: 7.5625rem;
+    }
+    .see-partners{
+        margin-bottom: 3.5625rem;
+    }
+}
+@media screen and (min-width: 768px) and (orientation: landscape){
+    .header{
+        text-align: center;
+        background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.1)),url('../img/photo-tablet.jpg');
+        background-repeat: no-repeat;
+    }
+}   
+
+/*============Задание-3=============*/
+/* @media screen and (min-width: 480px){
+    .container{
+        display: flex;
+        max-width: 960px;
+        height: 500px;
+        flex-direction: column;
+    }
+    .content{
+        width: 100%;
+        height: 35%;
+        margin-bottom: 5%;
+        background-color: red;
+    }
+    .sidebar{
+        width: 100%;
+        height: 35%;
+        margin-bottom: 5%;
+        background-color: purple
+    }
+    .sidebar-2{
+        width: 100%;
+        height: 20%;
+        background-color: sandybrown;
+        margin-right: 0;
+    }    
+}
+@media screen and (min-width: 768px){
+    .container{
+        display: flex;
+        flex-flow: wrap;
+        align-content: stretch;
+        max-width: 960px;
+        height: 500px;
+    }
+    .content{
+        width: 100%;
+        margin: 0;
+        height: 250px;
+        background-color: red;
+    }
+    .sidebar{
+        width: 30%;
+        height: 200px;
+        margin: 0;
+        background-color: purple;
+    }
+    .sidebar-2{
+        width: 69%;
+        height: 200px;
+        background-color: sandybrown;
+        margin: 0;
+        margin-left: 1%;
+    }
+} */
+
+
+/*============Задание-2=============*/
+
+/* .container{
+    display: flex;
+    max-width: 960px;
+    height: 500px;
+}
+.content{
+    width: 70%;
+    height: 100%;
+    background-color: red;
+}
+.sidebar{
+    width: 30%;
+    height: 100%;
+    background-color: purple
+}
+
+@media screen and (max-width: 480px){
+    .container{
+        display: flex;
+        max-width: 960px;
+        height: 500px;
+        flex-direction: column;
+    }
+    .content{
+        width: 100%;
+        height: 50%;
+        background-color: red;
+    }
+    .sidebar{
+        width: 100%;
+        height: 50%;
+        background-color: purple
+    }
+}
+@media screen and (min-width: 768px){
+    .container{
+        display: flex;
+        max-width: 960px;
+        height: 500px;
+    }
+    .content{
+        width: 70%;
+        background-color: red;
+    }
+    .sidebar{
+        width: 30%;
+        background-color: purple
+    }
+} */
+
+/*============Задание-1=============*/
+
+/* .container{
+    display: flex;
+    max-width: 960px;
+    height: 500px;
+}
+.f-block{
+    width: 54.17%;
+    background-color: aqua;
+    margin-right: 1.5rem;
+}
+.s-block, .t-block{
+    width: 20.8%;
+
+}
+.s-block{
+    background-color: blue;
+    margin-right: 1.5rem;
+}
+.t-block{
+    background-color: red;
+} */

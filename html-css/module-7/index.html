@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>homework-07</title>
 </head>
@@ -57,15 +58,15 @@
         <img class="contact-us-img" src="img/Map Image.png" alt="Map">
         <h2 class="contact-us-title">contact us</h2>
         <p class="contact-us-descr">Proin iaculis purus consequat sem cure.</p>
-        <div class="form">
+        <form class="form">
             <div class="inputs">
-                <input type="text" name="name" id="name" placeholder="YOUR NAME *" >
-                <input type="email" name="email" id="email" placeholder="YOUR E-MAIL *" >
+                <input type="text" name="name" id="name" placeholder="YOUR NAME *" required >
+                <input type="email" name="email" id="email" placeholder="YOUR E-MAIL *" required>
                 <input  type="text" name="subject" id="subject" placeholder="SUBJECT" >
             </div>
-            <textarea name="text" id="text" cols="30" rows="5" placeholder="YOUR MESSAGE *" ></textarea>
-            <input type="button" value="send message" id="button">
-        </div>
+            <textarea name="text" id="text" cols="30" rows="5" placeholder="YOUR MESSAGE *" required ></textarea>
+            <button id="button" type="submit">send message</button>
+        </form>
     </footer>
     <!-- <div class="wrapper">
         <table class="collapse">
