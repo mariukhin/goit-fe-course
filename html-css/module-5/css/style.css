@@ -259,10 +259,21 @@ nav{
 }
 
 
-.card-photo{
-    display: block;   
+.card-photo, .card-photo-2,
+.card-photo-3, .card-photo-4{
+    display: block;
+    background-image: url('../img/collection1.png');   
     height: 280px;
     width: 255px;
+}
+.card-photo-2{
+    background-image: url('../img/collection2.png');
+}
+.card-photo-3{
+    background-image: url('../img/collection3.png');
+}
+.card-photo-4{
+    background-image: url('../img/collection4.png');
 }
 .card-link{
     display: block;
