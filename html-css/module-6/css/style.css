@@ -149,6 +149,8 @@ nav{
 }
 .descr{
     margin-bottom: 90px;
+    margin-left: 142px;
+    margin-right: 130px;
 }
 .hover-container:hover{
     transform: translate(-10px, -10px);
