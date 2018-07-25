@@ -102,6 +102,11 @@
     margin: 0 auto;
     margin-bottom: 1.25rem
 }
+.meet-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 .meet-colect{
     text-align: center;
 }
@@ -197,9 +202,109 @@
 }
 @media screen and (min-width: 768px) and (orientation: landscape){
     .header{
+        padding: 0;
+        margin-bottom: 4.5rem;
+        height: 43.75rem;
         text-align: center;
         background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.1)),url('../img/photo-tablet.jpg');
         background-repeat: no-repeat;
+    }
+    .menu{
+        float: right;
+        padding: 0;
+        padding-top: 2.375rem;
+        padding-right: 3.125rem;
+    }
+    .logo{
+        float: left;
+        padding-top: 2.875rem;
+        padding-left: 3.0625rem;
+    }
+    .clearfix::after{
+        display: table;
+        content: '';
+        clear: both;
+    }
+    .title{
+        margin: 0 auto;
+        width: 66%;
+        padding-top: 14.125rem;
+        font-size: 3.25rem;
+        line-height: 4rem;
+        margin-bottom: 0.75rem;
+    }
+    .subtitle{
+        padding: 0;
+        margin: 0;
+        margin-bottom: 2.125rem;
+        font-size: 1.5rem;
+    }
+    .find{
+        padding: 0.75rem 1.1rem 0.75rem;
+    }
+    .see-partners{
+        padding: 0.75rem 1.6rem 0.75rem;
+        margin-bottom: 2.5rem;
+    }
+    .meet-container{
+        margin: 0 auto;
+        margin-bottom: 2.4375rem;
+        width: 64%;
+    }
+    .meet-card{
+        margin: 0;
+        width: 12.5rem;
+    }
+    .meet-card:nth-of-type(2),
+    .meet-card:last-of-type{
+        margin-bottom:0;
+    }
+    .meet-card:nth-of-type(3),
+    .meet-card:first-of-type{
+        margin-bottom: 3.6875rem;
+    }
+    .meet-card:nth-of-type(2){
+        order: 2;
+    }
+    .meet-card:last-of-type{
+        order: 3;
+    }
+    .meet-title{
+        padding: 0;
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+
+}
+@media screen and (min-width: 1440px){
+    .header{
+        padding: 0;
+        margin-bottom: 4.375rem;
+        background:linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.1)), url('../img/photo.jpg');
+        background-repeat: no-repeat;
+    }
+    .menu{
+        padding-right: 15.625rem;
+    }
+    .logo{
+        padding-left: 15.625rem;
+    }
+    .title{
+        width: 35%;
+        margin-bottom: 1rem;
+    }
+    .meet-container{
+        width: 65.5%;
+    }
+    .meet-card:nth-of-type(2),
+    .meet-card:last-of-type,
+    .meet-card:nth-of-type(3),
+    .meet-card:first-of-type{
+        margin-bottom:0;
+    }
+    .see-partners{
+        padding: 0.75rem 1.5rem 0.75rem;
+        margin-bottom: 4.25rem;
     }
 }   
 
