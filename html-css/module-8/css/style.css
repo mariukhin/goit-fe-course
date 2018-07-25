@@ -36,8 +36,9 @@
     height: 33.75rem;
 }
 .login, .signup{
-    display: inline-block;
     border: 0;
+    padding: 0;
+    padding-right: 0.7rem;
     background-color: transparent;
     text-align: center;
     font-family: 'Montserrat';
@@ -48,10 +49,11 @@
 }
 .signup{
     border: 0.125rem solid #ffffff;
-    padding: 0.75rem 1.1875rem 0.625rem;
+    padding: 0.5rem 0.9rem 0.5rem;
     border-radius: 1.5rem;
 }
 .logo{
+    display: block;
     text-decoration: none;
     font-family: 'Montserrat';
     font-size: 1.25rem;
@@ -123,7 +125,7 @@
 }
 .card-title{
     margin: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 0.97rem;
     font-family: 'Montserrat';
     font-size: 0.875rem;
     font-weight: 700;
@@ -140,8 +142,8 @@
 }
 .circle{
     position: absolute;
-    top: 5.5625rem;
-    right: 2.7rem;
+    top: 5.4rem;
+    right: 2.9rem;
     width: 2.0625rem;
     height: 2.0625rem;
     border: 0.25rem solid #ffffff;
@@ -169,12 +171,14 @@
         padding-bottom: 4.3125rem;
     }
     .menu{
-        padding-top: 1.25rem;
-        padding-bottom: 7.1875rem; 
+        padding-top: 1.4rem;
+        padding-bottom: 7.3rem; 
+    }
+    .logo{
+        margin-bottom: 1.75rem;
     }
     .title{
-        margin-top: 1.5rem;
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.6rem;
     }
     .subtitle{
         padding-left: 3rem;
@@ -187,7 +191,7 @@
         margin-bottom: 1.8125rem;
     }
     .meet-card:not(:last-of-type){
-        margin-bottom: 1.75rem;
+        margin-bottom: 1.5rem;
     }
     .meet-title{
         margin-bottom: 0.9375rem;
@@ -203,7 +207,7 @@
 @media screen and (min-width: 768px) and (orientation: landscape){
     .header{
         padding: 0;
-        margin-bottom: 4.5rem;
+        margin-bottom: 4.2rem;
         height: 43.75rem;
         text-align: center;
         background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.1)),url('../img/photo-tablet.jpg');
@@ -212,8 +216,11 @@
     .menu{
         float: right;
         padding: 0;
-        padding-top: 2.375rem;
+        padding-top: 2.3rem;
         padding-right: 3.125rem;
+    }
+    .login{
+        padding-right: 0.9rem;
     }
     .logo{
         float: left;
@@ -228,10 +235,10 @@
     .title{
         margin: 0 auto;
         width: 66%;
-        padding-top: 14.125rem;
+        padding-top: 13.2rem;
         font-size: 3.25rem;
         line-height: 4rem;
-        margin-bottom: 0.75rem;
+        margin-bottom: 1.8rem;
     }
     .subtitle{
         padding: 0;
@@ -243,7 +250,7 @@
         padding: 0.75rem 1.1rem 0.75rem;
     }
     .see-partners{
-        padding: 0.75rem 1.6rem 0.75rem;
+        padding: 0.6rem 1.5rem 0.6rem;
         margin-bottom: 2.5rem;
     }
     .meet-container{
@@ -255,13 +262,16 @@
         margin: 0;
         width: 12.5rem;
     }
+    .card-title{
+        margin-bottom: 0.8rem;
+    }
     .meet-card:nth-of-type(2),
     .meet-card:last-of-type{
         margin-bottom:0;
     }
     .meet-card:nth-of-type(3),
     .meet-card:first-of-type{
-        margin-bottom: 3.6875rem;
+        margin-bottom: 2.55rem;
     }
     .meet-card:nth-of-type(2){
         order: 2;
@@ -279,7 +289,7 @@
 @media screen and (min-width: 1440px){
     .header{
         padding: 0;
-        margin-bottom: 4.375rem;
+        margin-bottom: 4rem;
         background:linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.1)), url('../img/photo.jpg');
         background-repeat: no-repeat;
     }
@@ -291,10 +301,16 @@
     }
     .title{
         width: 35%;
-        margin-bottom: 1rem;
+        margin-bottom: 1.6rem;
+    }
+    .subtitle{
+        margin-bottom: 2.4rem;
     }
     .meet-container{
         width: 65.5%;
+    }
+    .card-title{
+        margin-bottom: 1rem;
     }
     .meet-card:nth-of-type(2),
     .meet-card:last-of-type,
@@ -303,7 +319,7 @@
         margin-bottom:0;
     }
     .see-partners{
-        padding: 0.75rem 1.5rem 0.75rem;
+        padding: 0.5rem 1.5rem 0.65rem;
         margin-bottom: 4.25rem;
     }
 }   
