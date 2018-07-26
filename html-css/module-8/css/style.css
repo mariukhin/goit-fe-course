@@ -34,6 +34,12 @@
 .header{
     width: 100%;
     height: 33.75rem;
+    text-align: center;
+    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.1)),url('../img/photo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+    overflow: hidden;
 }
 .login, .signup{
     border: 0;
@@ -164,11 +170,8 @@
 }
 @media screen and (min-width: 320px){
     .header{
-        text-align: center;
-        background-image: url('../img/photo-mobile.jpg');
-        background-position: top;
-        background-repeat: no-repeat;
-        padding-bottom: 4.3125rem;
+        /* background-image: url('../img/photo-mobile.jpg'); */
+        margin-bottom: 4.3125rem;
     }
     .menu{
         padding-top: 1.4rem;
@@ -209,9 +212,7 @@
         padding: 0;
         margin-bottom: 4.2rem;
         height: 43.75rem;
-        text-align: center;
-        background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.1)),url('../img/photo-tablet.jpg');
-        background-repeat: no-repeat;
+        /* background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.1)),url('../img/photo-tablet.jpg'); */
     }
     .menu{
         float: right;
@@ -290,8 +291,7 @@
     .header{
         padding: 0;
         margin-bottom: 4rem;
-        background:linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.1)), url('../img/photo.jpg');
-        background-repeat: no-repeat;
+        /* background:linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.1)), url('../img/photo.jpg'); */
     }
     .menu{
         padding-right: 15.625rem;
