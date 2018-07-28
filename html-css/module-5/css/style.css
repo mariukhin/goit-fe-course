@@ -76,33 +76,32 @@ nav{
 
 .slider{
     position: relative;
+    text-align: center;
+    line-height: 550px;
     width: 100%;
     height: 600px;
     color: #ffffff;
     background:linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url("../img/slider1.png");
 }
-.sl-title{
+.sl-text{
     display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    width: 768px;
+    height: 100px;
+}
+.sl-title{
     margin: 0;
-    padding-top: 218px;
-    padding-left: 430px;
-    margin-bottom: 35px;
+    margin-bottom: 28px;
     font-size: 60px;
     line-height: 45px;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     text-transform: uppercase;
     color: #ffffff;
-    opacity: 1;
 }
 .sl-desc{
-    /* position: absolute;
-    top: 297px;
-    left: 420px; */
-    display: inline-block;
-    padding-left: 430px;
     margin: 0;
-
     font-size: 25px;
     line-height: 20px;
     font-family: 'Roboto', sans-serif;
@@ -122,7 +121,7 @@ nav{
 }
 .btn-left{
     top: 225px;
-    left: 245px;
+    left: 230px;
 }
 .btn-right{
     top: 225px;
@@ -139,12 +138,12 @@ nav{
 }
 
 .collection{
+    padding-top: 100px;
     padding-bottom: 101px;
     background-color: #e9f0fd;
 }
 .section-name{
     margin: 0;
-    padding-top: 100px;
     margin-bottom: 82px;
     text-align: center;
     font-size: 48px;
@@ -278,11 +277,11 @@ nav{
 .card-link{
     display: block;
     float: left;
-    width: 179px;
+    width: 186px;
     background-color: #323232;
-    padding: 13px 10px 8px;
+    padding-left: 13px;
     font-size: 18px;
-    line-height: 16px;
+    line-height: 39px;
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
@@ -310,7 +309,7 @@ nav{
     display: block;
     float: right;
     width: 30px;
-    padding: 10px 12px 9px;
+    padding: 10px 12px 10px;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     line-height: 20px;
