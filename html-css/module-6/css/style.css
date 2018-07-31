@@ -26,19 +26,16 @@ nav{
 }
 .menu{
     flex-basis: 500px;
+    display: flex;
+    justify-content: space-between;
     list-style: none;
     margin: 0;
     padding: 0;
     line-height: 40px;
 }
 .menu-item {
-    display: inline-block;
-    margin-right: 45px;
     cursor: pointer; 
  }
-.menu-item:last-child{
-    margin-right: 0;
-}
 .item-link{
     text-decoration: none;
     font-size: 14px;
@@ -47,32 +44,24 @@ nav{
     text-transform: uppercase;
     color: #95e1d3;
     transition: color 200ms linear;
+    transition: border 200ms linear;
+
 }
 .menu-item:hover .item-link{
     color: #f6a1a1;
-}
-.menu-item:hover .stip{
-    opacity: 1;
-}
-.stip{
-    display: block;
-    width: 53px;
-    height: 2px;
-    background-color: #f38181;
-    margin: 0 auto;
-    opacity: 0;
-    transition: opacity 200ms linear;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #f38181;
 }
 .logo{
     flex-basis: 92px;
     text-decoration: none;
     font-size: 30px;
     font-weight: 700;
-    line-height: 32px;
+    line-height: 42px;
     color: #95e1d3; 
 }
 .services{
-    margin-bottom: 88px;
+    padding-bottom: 88px;
 }
 
 .services, .team{
@@ -121,18 +110,39 @@ nav{
 }
 .service-card{
     text-align: left;
-    flex-basis: 390px;
+    flex-basis: 360px;
+    padding-left: 30px;
 }
-.service-icon{
-    float: left;
+.service-text{
+    position: relative;
+    padding-left: 60px;
+}
+.service-text::before{
+    position: absolute;
+    left: 0;
     width: 32px;
     height: 32px;
 }
-
+.service-card:first-child>.service-text::before{
+    content: url('../img/alarm.png');
+}    
+.service-card:nth-child(2)>.service-text::before{
+    content: url('../img/line-graph.png');
+}
+.service-card:nth-child(3)>.service-text::before{
+    content: url('../img/computer.png');
+}
+.service-card:nth-child(4)>.service-text::before{
+    content: url('../img/book.png');
+}
+.service-card:nth-child(5)>.service-text::before{
+    content: url('../img/home.png');
+}
+.service-card:last-child>.service-text::before{
+    content: url('../img/digital.png');
+}            
 .service-title{
-    display: inline-block;
     vertical-align: top;
-    margin-left: 28px;
     margin-bottom: 14px;
     font-size: 14px;
     font-weight: 400;
@@ -141,7 +151,6 @@ nav{
     color: #333333;
 }
 .service-descr, .descr{
-    margin-left: 60px;
     font-size: 14px;
     line-height: 23px;
     color: #999999;
