@@ -47,6 +47,10 @@ nav{
     transition: border 200ms linear;
 
 }
+.cart-icon, .search-icon{
+    fill: #ffffff;
+    fill-rule: evenodd;
+}
 .menu-item:hover .item-link{
     color: #f6a1a1;
     padding-bottom: 5px;
