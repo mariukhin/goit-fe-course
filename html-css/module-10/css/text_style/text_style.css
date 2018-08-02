@@ -1,0 +1,163 @@
+@font-face {
+    font-family: 'Kaushan Script';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Kaushan Script'), local('KaushanScript-Regular'),
+         url('../../fonts/kaushan-script-v6-latin-regular.woff2') format('woff2'),
+         url('../../fonts/kaushan-script-v6-latin-regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('../../fonts/montserrat-v12-latin-regular.woff2') format('woff2'),
+         url('../../fonts/montserrat-v12-latin-regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+         url('../../fonts/montserrat-v12-latin-700.woff2') format('woff2'),
+         url('../../fonts/montserrat-v12-latin-700.woff') format('woff');
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'),
+         url('../../fonts/roboto-v18-latin-regular.woff2') format('woff2'),
+         url('../../fonts/roboto-v18-latin-regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Roboto Italic'), local('Roboto-Italic'),
+         url('../../fonts/roboto-v18-latin-italic.woff2') format('woff2'), 
+         url('../../fonts/roboto-v18-latin-italic.woff') format('woff');
+}
+.header_subtitle{
+    margin: 0;
+    margin-bottom: 2rem;
+    color: #ffffff;
+    font-family: 'Kaushan Script';
+    font-size: 2.625rem;
+    font-weight: 400;
+    line-height: 3.75rem;
+}
+.header_title{
+    margin: 0 auto;
+    width: 41.8%;
+    color: #ffffff;
+    font-family: 'Montserrat';
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    text-transform: uppercase;
+    margin-bottom: 6.875rem;
+}
+.header_button{
+    border: 0.2em solid #ffffff;
+    margin: 0;
+    padding: 0;
+    width: 10rem;
+    height: 3.125rem;
+    cursor: pointer;
+    background-color: transparent;
+
+    color: #ffffff;
+    font-family: 'Montserrat';
+    font-size: 0.9em;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 14.375rem;
+}
+
+
+.service-card::before{
+    position: absolute;
+    left: 1.875rem;
+    top: 0;
+    width: 2rem;
+    height: 2rem;
+}
+.subtitle{
+    margin: 0;
+    font-size: 2.4em;
+    line-height: 1em;
+    font-family: 'Kaushan Script';
+    color: #333333;
+    margin-bottom: 2.5rem;
+}
+.title, .team-title{
+    position: relative;
+    margin: 0;
+    margin-bottom: 4.065rem;
+    font-family: 'Montserrat';
+    font-size: 2.5em;
+    line-height: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #333333;
+}
+.title::after, .team-title::after{
+    position: absolute;
+    top: 4.0625rem;
+    left: 35.3125rem;
+    display: block;
+    width: 3.75rem;
+    height: 0.1875rem;
+    background-color: #f38181;
+    content: '';
+}
+.team-title::after{
+    left: 35.625rem;
+}    
+.team-title{
+    margin-bottom: 5.3125rem;
+}
+.service-title{
+    vertical-align: top;
+    margin-bottom: 0.875rem;
+    font-family: 'Montserrat';
+    font-size: 1.4em;
+    font-weight: 400;
+    line-height: 1.4em;
+    text-transform: uppercase;
+    color: #333333;
+}
+.service-title{
+    vertical-align: top;
+    margin-bottom: 0.875rem;
+    font-family: 'Montserrat';
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1em;
+    text-transform: uppercase;
+    color: #333333;
+}
+.service-descr, .team-descr{
+    font-family: 'Roboto';
+    font-size: 1em;
+    line-height: 1em;
+    color: #999999;
+}
+.name{
+    font-family: 'Montserrat';
+    font-size: 1em;
+    line-height: 1.3em;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #333333;
+    margin-bottom: 0.6875rem;
+}
+.occupation{
+    color: #999999;
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 18px;
+}
