@@ -38,32 +38,32 @@
          url('../../fonts/roboto-v18-latin-italic.woff2') format('woff2'), 
          url('../../fonts/roboto-v18-latin-italic.woff') format('woff');
 }
-.header_subtitle{
+.header-subtitle{
     margin: 0;
-    margin-bottom: 2rem;
+    margin-bottom: 2.8rem;
     color: #ffffff;
     font-family: 'Kaushan Script';
-    font-size: 2.625rem;
+    font-size: 4.5rem;
     font-weight: 400;
     line-height: 3.75rem;
 }
-.header_title{
+.header-title{
     margin: 0 auto;
-    width: 41.8%;
+    width: 60%;
     color: #ffffff;
     font-family: 'Montserrat';
-    font-size: 4.5rem;
+    font-size: 9.4rem;
     font-weight: 700;
-    line-height: 4.5rem;
+    line-height: 8.9rem;
     text-transform: uppercase;
-    margin-bottom: 6.875rem;
+    margin-bottom: 6.7rem;
 }
-.header_button{
+.header-button{
     border: 0.2em solid #ffffff;
     margin: 0;
     padding: 0;
     width: 10rem;
-    height: 3.125rem;
+    height: 2.5rem;
     cursor: pointer;
     background-color: transparent;
 
@@ -76,36 +76,39 @@
 }
 
 
-.service-card::before{
+.services-collection_card::before{
     position: absolute;
     left: 1.875rem;
     top: 0;
     width: 2rem;
     height: 2rem;
 }
-.subtitle{
+.services-subtitle, .team-subtitle{
     margin: 0;
-    font-size: 2.4em;
+    font-size: 1.5em;
     line-height: 1em;
     font-family: 'Kaushan Script';
     color: #333333;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1rem;
 }
-.title, .team-title{
+.team-subtitle{
+    margin-bottom: 1.5rem;
+}
+.services-title, .team-title{
     position: relative;
     margin: 0;
-    margin-bottom: 4.065rem;
+    margin-bottom: 6.7rem;
     font-family: 'Montserrat';
-    font-size: 2.5em;
+    font-size: 2em;
     line-height: 1em;
     font-weight: 700;
     text-transform: uppercase;
     color: #333333;
 }
-.title::after, .team-title::after{
+.services-title::after, .team-title::after{
     position: absolute;
-    top: 4.0625rem;
-    left: 35.3125rem;
+    top: 4.4rem;
+    left: 34rem;
     display: block;
     width: 3.75rem;
     height: 0.1875rem;
@@ -118,7 +121,7 @@
 .team-title{
     margin-bottom: 5.3125rem;
 }
-.service-title{
+/* .services-title{
     vertical-align: top;
     margin-bottom: 0.875rem;
     font-family: 'Montserrat';
@@ -127,21 +130,21 @@
     line-height: 1.4em;
     text-transform: uppercase;
     color: #333333;
-}
-.service-title{
+} */
+.card-title{
     vertical-align: top;
     margin-bottom: 0.875rem;
     font-family: 'Montserrat';
-    font-size: 1em;
+    font-size: 0.9em;
     font-weight: 400;
     line-height: 1em;
     text-transform: uppercase;
     color: #333333;
 }
-.service-descr, .team-descr{
+.card-descr, .team-descr{
     font-family: 'Roboto';
     font-size: 1em;
-    line-height: 1em;
+    line-height: 1.4em;
     color: #999999;
 }
 .name{

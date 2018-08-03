@@ -1,7 +1,8 @@
-@import "./header/header_nav.css";
+@import "./header/header-nav.css";
 @import "./text_style/text_style.css";
 @import "./main/services.css";
 @import "./main/team.css";
+@import "./footer/footer.css";
 
 :root{
     --line-grad: linear-gradient(to top,rgb(242,213,135,0.9),
@@ -24,24 +25,25 @@
 }
 .main{
     text-align: center;
-    width: 72rem;
+    width: 76rem;
     margin: 0 auto;
-}       
-
-
-
-/* .box{
-    width: 400px;
-    height: 200px;
-    background: url('https://placeimg.com/400/200/nature')
-    no-repeat;
-}
-@media (-webkit-min-device-pixel-ratio: 2), 
+    padding-bottom: 80px;
+}  
+footer{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-top: 1px solid #e5e5e5;
+    width: 75rem;
+    margin: 0 auto;
+    height: 60px;
+}     
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), 
 (min-resolution: 192dpi){
-    .box{
-        width: 1000px;
-        height: 1000px;
-        background: url('https://placeimg.com/800/400/nature')
-        no-repeat;
+    .header{
+        background-image: var(--line-grad), url('../img/Layer_15@2x.jpg');
     }
-} */
+}
