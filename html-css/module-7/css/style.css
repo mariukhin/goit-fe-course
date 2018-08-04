@@ -47,7 +47,7 @@ nav{
     display: flex;
     justify-content: space-between;
     padding-top: 43px;
-    min-height: 35px;
+    height: 35px;
     padding-bottom: 113px;
 }
 .wrapper{
@@ -56,19 +56,16 @@ nav{
 }
 .menu{
     flex-basis: 510px;
+    display: flex;
+    justify-content: space-between;
     list-style: none;
     margin: 0;
     padding: 0;
     line-height: 34px;
 }
 .menu-item {
-    display: inline-block;
-    margin-right: 37px;
     cursor: pointer; 
  }
-.menu-item:last-child{
-    margin-right: 0;
-}
 .item-link{
     text-decoration: none;
     font-size: 14px;
@@ -83,11 +80,9 @@ nav{
     color: #fed136;
 }
 .logo{
-    flex-basis: 78px;
     text-decoration: none;
     font-family: 'Satisfy';
     font-size: 30px;
-    line-height: 33px;
     color: #fed136; 
 }
 
@@ -116,28 +111,19 @@ nav{
 .services-collection{
     display: flex;
     justify-content: space-around;
+    list-style: none;
+    padding: 0;
 }
 .service-card{
     text-align: center;
     flex-basis: 300px;
 }
-.circle{
+.service-icon{
     display: block;
-    position: relative;
     margin: 0 auto;
+    margin-bottom: 23px;
     width: 74px;
     height: 73px;
-    background-image: url('../img/Circle-1.png');
-    margin-bottom: 23px;
-    background-position: center;
-}
-.service-icon{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 40px;
-    height: 40px;
 }
 .service-title{
     font-size: 16px;
@@ -186,6 +172,7 @@ main{
 .form{
     width: 940px;
     margin: 0 auto;
+    padding-bottom: 115px;
 }
 .inputs{
     display: inline-block;
@@ -221,8 +208,9 @@ main{
 #text{
     display: inline-block;
     margin-left: -.3em;
-    padding-top: 20px;
-    height: 190px;
+    padding: 20px;
+    height: 170px;
+    width: 416px;
 }
 #button{
     display: block;
