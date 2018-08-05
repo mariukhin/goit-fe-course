@@ -41,10 +41,15 @@
     margin: auto;
     overflow: hidden;
 }
+.menu{
+    display: flex;
+    justify-content: space-between;
+    width: 9.375rem;
+    margin: 0 auto;
+}
 .login, .signup{
     border: 0;
     padding: 0;
-    padding-right: 0.7rem;
     background-color: transparent;
     text-align: center;
     font-family: 'Montserrat';
@@ -113,6 +118,7 @@
 .meet-container{
     display: flex;
     flex-wrap: wrap;
+    align-content: space-between;
     justify-content: space-around;
 }
 .meet-colect{
@@ -191,10 +197,8 @@
     .meet-container{
         margin: 0 auto;
         width: 68.75%;
+        height: 57.6875rem;
         margin-bottom: 1.8125rem;
-    }
-    .meet-card:not(:last-of-type){
-        margin-bottom: 1.5rem;
     }
     .meet-title{
         margin-bottom: 0.9375rem;
@@ -209,42 +213,39 @@
 }
 @media screen and (min-width: 768px) and (orientation: landscape){
     .header{
-        padding: 0;
         margin-bottom: 4.2rem;
         height: 43.75rem;
-        /* background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.1)),url('../img/photo-tablet.jpg'); */
+    }
+    .nav{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding-top: 2.4rem;
+        width: 87%;
+        margin: 0 auto;
+        margin-bottom: 8.8rem;
     }
     .menu{
-        float: right;
+        order: 2;
         padding: 0;
-        padding-top: 2.3rem;
-        padding-right: 3.125rem;
-    }
-    .login{
-        padding-right: 0.9rem;
+        margin: 0;
     }
     .logo{
-        float: left;
-        padding-top: 2.875rem;
-        padding-left: 3.0625rem;
-    }
-    .clearfix::after{
-        display: table;
-        content: '';
-        clear: both;
+        margin: 0;
+        order: 1;
+        line-height: 1.75em;
     }
     .title{
         margin: 0 auto;
         width: 66%;
-        padding-top: 13.2rem;
         font-size: 3.25rem;
         line-height: 4rem;
-        margin-bottom: 1.8rem;
+        margin-bottom: 1.6rem;
     }
     .subtitle{
         padding: 0;
         margin: 0;
-        margin-bottom: 2.125rem;
+        margin-bottom: 2.2rem;
         font-size: 1.5rem;
     }
     .find{
@@ -257,22 +258,15 @@
     .meet-container{
         margin: 0 auto;
         margin-bottom: 2.4375rem;
+        height: 30.8125rem;
         width: 64%;
     }
     .meet-card{
         margin: 0;
-        width: 12.5rem;
+        width: 14rem;
     }
     .card-title{
-        margin-bottom: 0.8rem;
-    }
-    .meet-card:nth-of-type(2),
-    .meet-card:last-of-type{
-        margin-bottom:0;
-    }
-    .meet-card:nth-of-type(3),
-    .meet-card:first-of-type{
-        margin-bottom: 2.55rem;
+        margin-bottom: 0.9rem;
     }
     .meet-card:nth-of-type(2){
         order: 2;
@@ -282,22 +276,15 @@
     }
     .meet-title{
         padding: 0;
-        margin: 0;
+        margin: 0 auto;
         margin-bottom: 2rem;
+        width: 55%;
     }
 
 }
 @media screen and (min-width: 1440px){
-    .header{
-        padding: 0;
-        margin-bottom: 4rem;
-        /* background:linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.1)), url('../img/photo.jpg'); */
-    }
-    .menu{
-        padding-right: 15.625rem;
-    }
-    .logo{
-        padding-left: 15.625rem;
+    .nav{
+        width: 65%;
     }
     .title{
         width: 35%;
@@ -307,16 +294,8 @@
         margin-bottom: 2.4rem;
     }
     .meet-container{
-        width: 65.5%;
-    }
-    .card-title{
-        margin-bottom: 1rem;
-    }
-    .meet-card:nth-of-type(2),
-    .meet-card:last-of-type,
-    .meet-card:nth-of-type(3),
-    .meet-card:first-of-type{
-        margin-bottom:0;
+        width: 67%;
+        height: 14.7rem;
     }
     .see-partners{
         padding: 0.5rem 1.5rem 0.65rem;
@@ -324,135 +303,3 @@
     }
 }   
 
-/*============Задание-3=============*/
-/* @media screen and (min-width: 480px){
-    .container{
-        display: flex;
-        max-width: 960px;
-        height: 500px;
-        flex-direction: column;
-    }
-    .content{
-        width: 100%;
-        height: 35%;
-        margin-bottom: 5%;
-        background-color: red;
-    }
-    .sidebar{
-        width: 100%;
-        height: 35%;
-        margin-bottom: 5%;
-        background-color: purple
-    }
-    .sidebar-2{
-        width: 100%;
-        height: 20%;
-        background-color: sandybrown;
-        margin-right: 0;
-    }    
-}
-@media screen and (min-width: 768px){
-    .container{
-        display: flex;
-        flex-flow: wrap;
-        align-content: stretch;
-        max-width: 960px;
-        height: 500px;
-    }
-    .content{
-        width: 100%;
-        margin: 0;
-        height: 250px;
-        background-color: red;
-    }
-    .sidebar{
-        width: 30%;
-        height: 200px;
-        margin: 0;
-        background-color: purple;
-    }
-    .sidebar-2{
-        width: 69%;
-        height: 200px;
-        background-color: sandybrown;
-        margin: 0;
-        margin-left: 1%;
-    }
-} */
-
-
-/*============Задание-2=============*/
-
-/* .container{
-    display: flex;
-    max-width: 960px;
-    height: 500px;
-}
-.content{
-    width: 70%;
-    height: 100%;
-    background-color: red;
-}
-.sidebar{
-    width: 30%;
-    height: 100%;
-    background-color: purple
-}
-
-@media screen and (max-width: 480px){
-    .container{
-        display: flex;
-        max-width: 960px;
-        height: 500px;
-        flex-direction: column;
-    }
-    .content{
-        width: 100%;
-        height: 50%;
-        background-color: red;
-    }
-    .sidebar{
-        width: 100%;
-        height: 50%;
-        background-color: purple
-    }
-}
-@media screen and (min-width: 768px){
-    .container{
-        display: flex;
-        max-width: 960px;
-        height: 500px;
-    }
-    .content{
-        width: 70%;
-        background-color: red;
-    }
-    .sidebar{
-        width: 30%;
-        background-color: purple
-    }
-} */
-
-/*============Задание-1=============*/
-
-/* .container{
-    display: flex;
-    max-width: 960px;
-    height: 500px;
-}
-.f-block{
-    width: 54.17%;
-    background-color: aqua;
-    margin-right: 1.5rem;
-}
-.s-block, .t-block{
-    width: 20.8%;
-
-}
-.s-block{
-    background-color: blue;
-    margin-right: 1.5rem;
-}
-.t-block{
-    background-color: red;
-} */
