@@ -2,35 +2,14 @@
    Import partials below
 */
 @import 'normalize';
+@import 'variables';
+@import 'text_style';
+
+@import 'header';
+@import 'services';
+@import 'team';
+@import 'footer';
 
 /*
    Import partials below
-*/
-@import 'normalize';
-@font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Roboto'), local('Roboto-Regular'),
-         url('../fonts/roboto-v18-latin-regular.woff2') format('woff2'),
-         url('../fonts/roboto-v18-latin-regular.woff') format('woff');
-}
-
-$roboto: 'Roboto', sans-serif;
-$roboto-color: #424242;
-$hover-color: #03A9F4;
-$size: 18px;
-
-@mixin title_size($title_size, $title_height){
-    font-size: $title_size;
-    line-height: $title_height;
-}
-
-.title{
-    font-family: $roboto;
-    color: $roboto-color;
-    font-size: $size;
-    &:hover{
-        color: $hover-color;
-    }
-}
+*/   

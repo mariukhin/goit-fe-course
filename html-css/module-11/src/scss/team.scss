@@ -1,0 +1,118 @@
+@import 'variables';
+
+.team-descr{
+    margin: 0 auto;
+    @include whmb($width: 61.25rem, $mar-bottom: 5.625rem);
+}
+.team-collection{
+    .hover-container:hover .social-container{
+        opacity: 1;
+    }
+    .team-card{
+        .backgr-color{
+            @include whmb($width: 23.8125rem, $height: 29.4375rem, 
+            $mar-bottom: 1.875rem ,$pos: relative, $dis: block);
+            background-color: #95e1d3;
+        }
+        -ms-flex-preferred-size: 22rem;
+            flex-basis: 22rem;
+            &:first-child{
+                .backgr-color{
+                    .hover-container{
+                        background-image: url('../img/team1.jpg');
+                        &:hover{
+                            @include back-transform(team1);
+                            @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), 
+                            (min-resolution: 192dpi){
+                                background: $line-grad, url('../img/team1@2x.jpg');
+                            }
+                        }
+                        @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), 
+                        (min-resolution: 192dpi){
+                            background-image: url('../img/team1@2x.jpg');
+                        }   
+                    }
+                }
+            }
+            &:nth-child(2){
+                .backgr-color{
+                    .hover-container{
+                        background-image: url('../img/team2.jpg');
+                        &:hover{
+                            @include back-transform(team2);
+                            @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), 
+                            (min-resolution: 192dpi){
+                                background: $line-grad, url('../img/team2@2x.jpg');
+                            }
+                        }
+                        @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), 
+                        (min-resolution: 192dpi){
+                            background-image: url('../img/team2@2x.jpg');
+                        }   
+                    }
+                }
+            }
+            &:last-child{
+                .backgr-color{
+                    .hover-container{
+                        background-image: url('../img/team3.jpg');
+                        &:hover{
+                            @include back-transform(team3);
+                            @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), 
+                            (min-resolution: 192dpi){
+                                background: $line-grad, url('../img/team3@2x.jpg');
+                            }    
+                        }
+                        @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), 
+                        (min-resolution: 192dpi){
+                            background-image: url('../img/team3@2x.jpg');
+                        }    
+                    }
+                }
+            }
+    }
+   
+}
+.hover-container{
+    @include whmb($width: 23.75rem, $height: 29.375rem, 
+    $pos: absolute, $dis: block);
+
+    -webkit-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+.social-container{
+    @include whmb($width: 14.9375rem, $height: 3.6875rem, 
+    $pos: absolute, $dis: block);
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    opacity: 0;
+
+    background-color: map-get($map: $colors, $key: hover);
+}
+.social-button{
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 0;
+    border-right: 0.0625rem solid #f3818173 ;
+    text-align: center;
+    @include buttons($mar:'left', $marnum: -0.23em, $butwidth: 3.6875rem, $butheight: 3.6875rem);
+
+    -webkit-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+    transition: all 200ms linear;
+    &:hover{
+        background-color: map-get($map: $colors, $key: pseudo);
+    }
+    &:hover .icon{
+        fill: map-get($map: $colors, $key: text-white);
+    }
+}
+.icon{
+    @include whmb($width: 1.6rem, $height: 1.6rem);
+    fill: map-get($map: $colors, $key: pseudo);
+}

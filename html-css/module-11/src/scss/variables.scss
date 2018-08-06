@@ -1,0 +1,177 @@
+@font-face {
+    font-family: 'Kaushan Script';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Kaushan Script'), local('KaushanScript-Regular'),
+         url('../../fonts/kaushan-script-v6-latin-regular.woff2') format('woff2'),
+         url('../../fonts/kaushan-script-v6-latin-regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('../../fonts/montserrat-v12-latin-regular.woff2') format('woff2'),
+         url('../../fonts/montserrat-v12-latin-regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+         url('../../fonts/montserrat-v12-latin-700.woff2') format('woff2'),
+         url('../../fonts/montserrat-v12-latin-700.woff') format('woff');
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'),
+         url('../../fonts/roboto-v18-latin-regular.woff2') format('woff2'),
+         url('../../fonts/roboto-v18-latin-regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Roboto Italic'), local('Roboto-Italic'),
+         url('../../fonts/roboto-v18-latin-italic.woff2') format('woff2'), 
+         url('../../fonts/roboto-v18-latin-italic.woff') format('woff');
+}
+
+$roboto: 'Roboto';
+$mont: 'Montserrat';
+$kaush: 'Kaushan Script';
+$line-grad: linear-gradient(to top,#f2d587e6, #ef8b8ae6);
+
+$colors:(
+    text-white: #ffffff,
+    sub-black: #333333,
+    pseudo: #f38181,
+    deskr-gray: #999999,
+    hover: #fce38a,
+    footname: #f9c0c0,
+    emailtext: #cccccc,
+    footbutton: #95e1d3
+);
+
+@mixin buttons($pad: 0, $mar: 'bottom', $marnum: 0, $butwidth: '', 
+$butheight: 0, $backcolor: transparent){
+
+    padding: $pad;
+    width: $butwidth;
+    height: $butheight;
+    cursor: pointer;
+    background-color: $backcolor;
+
+    @if $mar == 'bottom'{
+        margin-bottom: $marnum;
+    }@else if $mar == 'left'{
+        margin-left: $marnum;
+    }@else if $mar == 'right'{
+        margin-right: $marnum;
+    }@else if $mar == 'top'{
+        margin-top: $marnum;
+    }@else if $mar == 'null'{
+        margin: 0;
+        $marnum: 0;
+    }        
+}
+@mixin whmb($width: '', $height: '', $mar-bottom: '', $pos: '', $dis: ''){
+    width: $width;
+    height: $height;
+    margin-bottom: $mar-bottom;
+    position: $pos;
+    display: $dis;
+}
+////////////-----header-nav.scss------//////////////
+@mixin flex($value: 'all'){
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    @if $value == 'all'{
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+        -ms-flex-line-pack: justify;
+            align-content: space-between;
+    }@else if $value == 'hor'{
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    }@else if $value == 'ver'{
+        -ms-flex-line-pack: justify;
+            align-content: space-between;
+    }@else if $value == 'align'{
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    }           
+}
+%icon{
+    width: 18px;
+    fill: map-get($map: $colors, $key: text-white);
+    fill-rule: evenodd;
+}
+
+////////////-----text_style.scss------//////////////
+
+@mixin font_style($family: '', $fsize: '', $fweight: 400, $lheight: '',$ftrans: uppercase, $fcolor: ''){
+    font-family: $family;
+    font-size: $fsize ;
+    font-weight: $fweight;
+    line-height: $lheight;
+    text-transform: $ftrans;
+    color: map-get($map: $colors, $key: $fcolor);
+}
+
+%subtitle{
+    margin: 0;
+    @include font_style($kaush, 1.5rem, 400, 1em, none, sub-black);
+    margin-bottom: 1rem;
+}
+%title{
+    position: relative;
+    margin: 0;
+    margin-bottom: 6.7rem;
+    @include font_style($mont, 2em, 700, 1em, uppercase ,sub-black);
+}
+%pseudo{
+    position: absolute;
+    top: 4.4rem;
+    left: 34rem;
+    display: block;
+    width: 3.75rem;
+    height: 0.1875rem;
+    background-color: map-get($map: $colors, $key: pseudo);
+    content: '';
+}
+
+
+////////////-----services.scss------//////////////
+
+%collection{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    min-height: 15.1rem;
+    @include flex();
+}
+%icon-service{
+    position: absolute;
+    left: 1.875rem;
+    top: 0;
+    width: 2rem;
+    height: 2rem;
+}
+
+////////////----------team.scss-----------/////////////
+
+@mixin back-transform($team){
+    -webkit-transform: translate(-0.625rem, -0.625rem);
+        -ms-transform: translate(-0.625rem, -0.625rem);
+            transform: translate(-0.625rem, -0.625rem);
+    background: $line-grad, url('../img/#{$team}.jpg');
+}

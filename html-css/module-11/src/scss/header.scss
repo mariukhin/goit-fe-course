@@ -1,0 +1,56 @@
+@import 'variables';
+*{
+    margin: 0;
+}
+.header{
+    width: 100%;
+    text-align: center;
+    background-image: $line-grad, url('../img/Layer_15.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 2.875rem;
+
+    &-nav{
+        @include flex(hor);
+        padding-top: 1.875rem;
+        min-height: 2.8125rem;
+        padding-bottom: 5.375rem;
+    }
+    @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), 
+    (min-resolution: 192dpi){
+        background-image: $line-grad, url('../img/Layer_15@2x.jpg');
+    }    
+}
+.wrapper{
+    width: 65rem;
+    margin: 0 auto;
+}
+.nav-menu{
+    margin: 0;
+    padding: 0;
+    -ms-flex-preferred-size: 31.25rem;
+        flex-basis: 31.25rem;
+    @include flex(hor);
+    list-style: none;
+    line-height: 2.5rem;
+    &_item{
+        cursor: pointer;
+        &:hover .cart-icon,
+        &:hover .search-icon{
+            fill: map-get($map: $colors, $key: hover);
+        }
+        &:hover .item-link{
+            color: map-get($map: $colors, $key: hover);
+            padding-bottom: 0.5em;
+            border-bottom: 0.2em solid map-get($map: $colors, $key: hover);
+        }    
+    }
+}
+.cart-icon{
+    height: 15px;
+    @extend %icon;
+}
+.search-icon{
+    height: 18px;
+    @extend %icon;
+}

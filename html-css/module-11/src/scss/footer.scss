@@ -1,0 +1,44 @@
+@import 'variables';
+
+.footer{
+    @include flex(align);
+    border-top: 0.0625rem solid #e5e5e5;
+    @include whmb($width: 75rem, $height: 3.75rem);
+    margin: 0 auto;
+
+    &-text{
+        -ms-flex-preferred-size: 51.25rem;
+            flex-basis: 51.25rem;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+        @include font_style($mont, 14px, 400, 16px, none, sub-black);
+        .footer-name{
+            color: map-get($map: $colors, $key: footname);
+        }
+    }
+} 
+.footer-form{
+    -ms-flex-preferred-size: 23.75rem;
+        flex-basis: 23.75rem;
+    @include flex(hor);    
+}
+.email{
+    -ms-flex-preferred-size: 15rem;
+        flex-basis: 15rem;
+    height: 2.3125rem;
+    padding: 0;
+    padding-left: 0.8125rem;
+    border: 1px solid #e7e7e7;
+
+    @include font_style($roboto, 15px, 400, 24px, none, emailtext);
+    font-style: italic;
+}
+.submit{
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    padding: 0;
+    border: 0;
+    @include buttons($pad: 0rem 1.75rem, $mar: 'null', $butheight: 2.4375rem, $backcolor: map-get($map: $colors, $key: footbutton));   
+
+    @include font_style($mont, 15px, 700, '', uppercase, text-white);
+}

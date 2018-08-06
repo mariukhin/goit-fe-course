@@ -1,0 +1,48 @@
+@import 'variables';
+
+.main{
+    text-align: center;
+    width: 76rem;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+    &-services{
+        padding-bottom: 5.5rem;
+    }
+}   
+.services-collection{
+    @extend %collection;
+}
+.team-collection{
+    @extend %collection;
+    @include flex(hor);
+    height: 34.0625rem;
+}
+.services-collection_card{
+    position: relative;
+    text-align: left;
+    -ms-flex-preferred-size: 18.75rem;
+        flex-basis: 18.75rem;
+    padding-left: 5rem;
+    &::before{
+        @extend %icon-service;
+    }
+    &:first-child::before{
+        content: url('../../img/alarm.png');
+    }
+    &:nth-child(2)::before{
+        content: url('../../img/line-graph.png');
+    }
+    &:nth-child(3)::before{
+        content: url('../../img/computer.png');
+    }
+    &:nth-child(4)::before{
+        content: url('../../img/book.png');
+    }
+    &:nth-child(5)::before{
+        content: url('../../img/home.png');
+    }
+    &:last-child::before{
+        content: url('../../img/digital.png');
+    }    
+}
+
