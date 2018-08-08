@@ -31,15 +31,16 @@
          url('../fonts/roboto-v18-latin-regular.woff') format('woff');
   }
 
+body{
+    margin: 0;
+}  
 .header{
     width: 100%;
-    height: 33.75rem;
     text-align: center;
     background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.1)),url('../img/photo.jpg');
     background-position: center;
     background-repeat: no-repeat;
     margin: auto;
-    overflow: hidden;
 }
 .menu{
     display: flex;
@@ -113,7 +114,18 @@
 .card-photo{
     display: block;
     margin: 0 auto;
-    margin-bottom: 1.25rem
+    margin-bottom: 1.25rem;
+}
+.meet-card::before{
+    position: absolute;
+    z-index: 3;
+    top: 5.4rem;
+    right: 2.9rem;
+    width: 2.0625rem;
+    height: 2.0625rem;
+    border: 0.25rem solid #ffffff;
+    border-radius: 1.25rem;
+    content: "";
 }
 .meet-container{
     display: flex;
@@ -152,32 +164,28 @@
     line-height: 1rem;
     color: #666666;
 }
-.circle{
-    position: absolute;
-    top: 5.4rem;
-    right: 2.9rem;
-    width: 2.0625rem;
-    height: 2.0625rem;
-    border: 0.25rem solid #ffffff;
-    border-radius: 1.25rem;
-    background-color: #ff4e50;
+.meet-card:first-of-type::before{
+    background: #ff4e50 url('../img/card-icon1.png') center no-repeat ; 
+    background-size: 1.3rem 1.3rem;
 }
-.meet-card:nth-of-type(2) .circle{
-    background-color: #ffa507;
+.meet-card:nth-of-type(2)::before{
+    background: #ffa507 url('../img/card-icon2.png') center no-repeat ; 
+    background-size: 1rem 1.3rem;
 }
-.meet-card:nth-of-type(3) .circle{
-    background-color: #1cd7ad;
+.meet-card:nth-of-type(3)::before{
+    background: #1cd7ad url('../img/card-icon3.png') center no-repeat ; 
+    background-size: 1.3rem 1.3rem;
 }
-.meet-card:last-of-type .circle{
-    background-color: #4e73db;
-}
-.card-icon{
-    padding-top: 0.5rem;
+.meet-card:last-of-type::before{
+    background: #4e73db url('../img/card-icon4.png') center no-repeat ;
+    background-size: 1.3rem 1.3rem;
 }
 @media screen and (min-width: 320px){
     .header{
-        /* background-image: url('../img/photo-mobile.jpg'); */
         margin-bottom: 4.3125rem;
+    }
+    .main{
+        padding-bottom: 3.5625rem;
     }
     .menu{
         padding-top: 1.4rem;
@@ -194,9 +202,12 @@
         padding-right: 3rem;
         margin-bottom: 1rem;
     }  
+    .find{
+        margin-bottom: 8.3rem;
+    }
     .meet-container{
         margin: 0 auto;
-        width: 68.75%;
+        width: 13.875rem;
         height: 57.6875rem;
         margin-bottom: 1.8125rem;
     }
@@ -207,14 +218,13 @@
         width: 7.5625rem;
         height: 7.5625rem;
     }
-    .see-partners{
-        margin-bottom: 3.5625rem;
-    }
 }
 @media screen and (min-width: 768px) and (orientation: landscape){
     .header{
         margin-bottom: 4.2rem;
-        height: 43.75rem;
+    }
+    .main{
+        padding-bottom: 2.5rem;
     }
     .nav{
         display: flex;
@@ -250,10 +260,10 @@
     }
     .find{
         padding: 0.75rem 1.1rem 0.75rem;
+        margin-bottom: 14.7rem;
     }
     .see-partners{
         padding: 0.6rem 1.5rem 0.6rem;
-        margin-bottom: 2.5rem;
     }
     .meet-container{
         margin: 0 auto;
@@ -282,7 +292,19 @@
     }
 
 }
+@media screen and (min-width: 1050px) and (max-width: 1440px){
+    .meet-container{
+        width: 88%;
+        height: 14.7rem;
+    }
+}
 @media screen and (min-width: 1440px){
+    .header{
+        width: 90rem;
+    }
+    .main{
+        padding-bottom: 4.25rem;
+    }
     .nav{
         width: 65%;
     }
@@ -299,7 +321,6 @@
     }
     .see-partners{
         padding: 0.5rem 1.5rem 0.65rem;
-        margin-bottom: 4.25rem;
     }
 }   
 
