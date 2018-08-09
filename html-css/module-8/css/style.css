@@ -37,6 +37,8 @@ body{
 .header{
     width: 100%;
     text-align: center;
+}
+.background{
     background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.1)),url('../img/photo.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -184,6 +186,9 @@ body{
     .header{
         margin-bottom: 4.3125rem;
     }
+    .background{
+        height: 33.6875rem;
+    }
     .main{
         padding-bottom: 3.5625rem;
     }
@@ -202,9 +207,9 @@ body{
         padding-right: 3rem;
         margin-bottom: 1rem;
     }  
-    .find{
+    /* .find{
         margin-bottom: 8.3rem;
-    }
+    } */
     .meet-container{
         margin: 0 auto;
         width: 13.875rem;
@@ -222,6 +227,9 @@ body{
 @media screen and (min-width: 768px) and (orientation: landscape){
     .header{
         margin-bottom: 4.2rem;
+    }
+    .background{
+        height: 43.8125rem;
     }
     .main{
         padding-bottom: 2.5rem;
@@ -260,7 +268,7 @@ body{
     }
     .find{
         padding: 0.75rem 1.1rem 0.75rem;
-        margin-bottom: 14.7rem;
+        /* margin-bottom: 14.7rem; */
     }
     .see-partners{
         padding: 0.6rem 1.5rem 0.6rem;
@@ -299,8 +307,9 @@ body{
     }
 }
 @media screen and (min-width: 1440px){
-    .header{
-        width: 90rem;
+    .background{
+        background-size: 100%;
+        height: 44.0625rem;
     }
     .main{
         padding-bottom: 4.25rem;
