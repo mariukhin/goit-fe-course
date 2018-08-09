@@ -31,16 +31,27 @@
          url('../fonts/roboto-v18-latin-regular.woff') format('woff');
 }
 
+body{
+    margin: 0;
+}  
 .header{
-    height: 33.75rem;
+    width: 100%;
     text-align: center;
+}
+.background{
     background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.1)),url('../img/photo.jpg');
     background-position: center;
     background-repeat: no-repeat;
+    margin: auto;
 }
-.header>.container:last-child{
+.header>.background>.container:last-child{
     padding-left: 0.8rem;
     padding-right: 0.8rem;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    width: 9.375rem;
 }
 .login, .signup{
     border: 0;
@@ -108,20 +119,30 @@
 .card-photo{
     display: block;
     margin: 0 auto;
-    width: 7.5625rem;
-    height: 7.5625rem;
     margin-bottom: 1.25rem
 }
 .meet-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-content: space-between;
 }
 .meet-colect{
     text-align: center;
 }
 .meet-card{
     position: relative;
+}
+.meet-card::before{
+    position: absolute;
+    z-index: 3;
+    top: 5.4rem;
+    right: 2.9rem;
+    width: 2.5625rem;
+    height: 2.5625rem;
+    border: 0.25rem solid #ffffff;
+    border-radius: 1.25rem;
+    content: "";
 }
 .meet-title{
     margin: 0;
@@ -148,38 +169,36 @@
     line-height: 1rem;
     color: #666666;
 }
-.circle{
-    position: absolute;
-    top: 5.4rem;
-    right: 2.4rem;
-    width: 2.5rem;
-    height: 2.5rem;
-    border: 0.25rem solid #ffffff;
-    border-radius: 1.25rem;
-    background-color: #ff4e50;
+.meet-card:first-of-type::before{
+    background: #ff4e50 url('../img/card-icon1.png') center no-repeat ; 
+    background-size: 1.3rem 1.3rem;
 }
-.meet-card:nth-of-type(2) .circle{
-    background-color: #ffa507;
+.meet-card:nth-of-type(2)::before{
+    background: #ffa507 url('../img/card-icon2.png') center no-repeat ; 
+    background-size: 1rem 1.3rem;
 }
-.meet-card:nth-of-type(3) .circle{
-    background-color: #1cd7ad;
+.meet-card:nth-of-type(3)::before{
+    background: #1cd7ad url('../img/card-icon3.png') center no-repeat ; 
+    background-size: 1.3rem 1.3rem;
 }
-.meet-card:last-of-type .circle{
-    background-color: #4e73db;
-}
-.card-icon{
-    padding-top: 0.4rem;
+.meet-card:last-of-type::before{
+    background: #4e73db url('../img/card-icon4.png') center no-repeat ;
+    background-size: 1.3rem 1.3rem;
 }
 @media screen and (min-width: 320px){
     .header{
         margin-bottom: 4.3125rem;
     }
+    .background{
+        height: 33.6875rem;
+    }
+    .main{
+        padding-bottom: 3.5625rem;
+    }
     .menu{
         padding-top: 1.4rem;
-        margin-bottom: 7.3rem; 
-    }
-    .login{
-        padding-right: 0.7rem;
+        margin: 0 auto; 
+        margin-bottom: 7.3rem;
     }
     .logo{
         margin-bottom: 1.75rem;
@@ -194,23 +213,23 @@
     }
     .meet-container{
         margin: 0 auto;
-        width: 72%;
+        width: 13.875rem;
+        height: 57.6875rem;
         margin-bottom: 1.8125rem;
-    }
-    .meet-card:not(:last-of-type){
-        margin-bottom: 1.5rem;
     }
     .meet-title{
         margin-bottom: 0.9375rem;
     }
-    .see-partners{
-        margin-bottom: 3.5625rem;
+    .card-photo{
+        width: 7.5625rem;
+        height: 7.5625rem;
     }
 }
 @media screen and (min-width: 768px) and (orientation: landscape){
     .header{
-        padding: 0;
         margin-bottom: 4.2rem;
+    }
+    .background{
         height: 43.75rem;
     }
     .menu{
@@ -218,15 +237,15 @@
         padding-top: 2.3rem;
         /* padding-right: 3.125rem; */
     }
-    .login{
-        padding-right: 0.9rem;
+    .main{
+        padding-bottom: 2.5rem;
     }
     .logo{
         padding-top: 2.875rem;
-        /* padding-left: 3.0625rem; */
+        line-height: 1.75em;
     }
     .title{
-        padding-top: 2rem;
+        padding-top: 1.4rem;
         font-size: 3.25rem;
         line-height: 4rem;
         margin-bottom: 1.8rem;
@@ -234,7 +253,7 @@
     .subtitle{
         padding: 0;
         margin: 0;
-        margin-bottom: 2.125rem;
+        margin-bottom: 2.2rem;
         font-size: 1.5rem;
     }
     .find{
@@ -242,27 +261,18 @@
     }
     .see-partners{
         padding: 0.6rem 1.5rem 0.6rem;
-        margin-bottom: 2.5rem;
     }
     .meet-container{
-        margin: 0 auto;
         margin-bottom: 2.4375rem;
-        width: 64%;
+        height: 30.8125rem;
+        width: 70%;
     }
     .meet-card{
         margin: 0;
-        width: 12.5rem;
+        width: 14rem;
     }
     .card-title{
-        margin-bottom: 0.8rem;
-    }
-    .meet-card:nth-of-type(2),
-    .meet-card:last-of-type{
-        margin-bottom:0;
-    }
-    .meet-card:nth-of-type(3),
-    .meet-card:first-of-type{
-        margin-bottom: 2.55rem;
+        margin-bottom: 0.9rem;
     }
     .meet-card:nth-of-type(2){
         order: 2;
@@ -277,23 +287,26 @@
     }
 
 }
-@media screen and (min-width: 1200px) and (max-width: 1439px){
+@media screen and (min-width: 1200px) and (max-width: 1440px){
     .meet-container{
-        width: 75%;
+        width: 88%;
+        height: 14.7rem;
     }
 }    
 @media screen and (min-width: 1440px){
     .header{
-        padding: 0;
-        margin-bottom: 4rem;
-        /* background:linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.1)), url('../img/photo.jpg'); */
+        margin-bottom: 3.9rem;
     }
-    /* .menu{
-        padding-right: 15.625rem;
+    .background{
+        background-size: 100%;
+        height: 44.0625rem;
     }
-    .logo{
-        padding-left: 15.625rem;
-    } */
+    .menu{
+        margin-left: 3.9rem;
+    }
+    .main{
+        padding-bottom: 4.25rem;
+    }
     .title{
         margin-bottom: 1.6rem;
     }
@@ -302,19 +315,10 @@
     }
     .meet-container{
         width: 85%;
-    }
-    .card-title{
-        margin-bottom: 1rem;
-    }
-    .meet-card:nth-of-type(2),
-    .meet-card:last-of-type,
-    .meet-card:nth-of-type(3),
-    .meet-card:first-of-type{
-        margin-bottom:0;
+        height: 14.7rem;
     }
     .see-partners{
         padding: 0.5rem 1.5rem 0.65rem;
-        margin-bottom: 4.25rem;
     }
 }
 
