@@ -34,19 +34,12 @@
 body{
     margin: 0;
 }  
-.header{
-    width: 100%;
-    text-align: center;
-}
 .background{
     background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.1)),url('../img/photo.jpg');
     background-position: center;
     background-repeat: no-repeat;
     margin: auto;
-}
-.header>.background>.container:last-child{
-    padding-left: 0.8rem;
-    padding-right: 0.8rem;
+    text-align: center;
 }
 .menu{
     display: flex;
@@ -171,7 +164,7 @@ body{
 }
 .meet-card:first-of-type::before{
     background: #ff4e50 url('../img/card-icon1.png') center no-repeat ; 
-    background-size: 1.3rem 1.3rem;
+    background-size: 1.2rem 1.2rem;
 }
 .meet-card:nth-of-type(2)::before{
     background: #ffa507 url('../img/card-icon2.png') center no-repeat ; 
@@ -183,16 +176,16 @@ body{
 }
 .meet-card:last-of-type::before{
     background: #4e73db url('../img/card-icon4.png') center no-repeat ;
-    background-size: 1.3rem 1.3rem;
+    background-size: 1.2rem 1.2rem;
 }
 @media screen and (min-width: 320px){
-    .header{
+    .container-fluid{
         margin-bottom: 4.3125rem;
     }
     .background{
         height: 33.6875rem;
     }
-    .main{
+    .container{
         padding-bottom: 3.5625rem;
     }
     .menu{
@@ -226,7 +219,7 @@ body{
     }
 }
 @media screen and (min-width: 768px) and (orientation: landscape){
-    .header{
+    .container-fluid{
         margin-bottom: 4.2rem;
     }
     .background{
@@ -235,9 +228,8 @@ body{
     .menu{
         padding: 0;
         padding-top: 2.3rem;
-        /* padding-right: 3.125rem; */
     }
-    .main{
+    .container{
         padding-bottom: 2.5rem;
     }
     .logo{
@@ -294,7 +286,7 @@ body{
     }
 }    
 @media screen and (min-width: 1440px){
-    .header{
+    .container-fluid{
         margin-bottom: 3.9rem;
     }
     .background{
@@ -304,7 +296,7 @@ body{
     .menu{
         margin-left: 3.9rem;
     }
-    .main{
+    .container{
         padding-bottom: 4.25rem;
     }
     .title{
