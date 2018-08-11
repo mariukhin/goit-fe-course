@@ -42,8 +42,6 @@ body{
     text-align: center;
 }
 .menu{
-    display: flex;
-    justify-content: space-between;
     width: 9.375rem;
 }
 .login, .signup{
@@ -114,12 +112,6 @@ body{
     margin: 0 auto;
     margin-bottom: 1.25rem
 }
-.meet-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-between;
-}
 .meet-colect{
     text-align: center;
 }
@@ -182,8 +174,8 @@ body{
     .container-fluid{
         margin-bottom: 4.3125rem;
     }
-    .background{
-        height: 33.6875rem;
+    .container-fluid>.row:last-child>.col-sm-12{
+        padding-bottom: 8.3rem;
     }
     .container{
         padding-bottom: 3.5625rem;
@@ -222,8 +214,8 @@ body{
     .container-fluid{
         margin-bottom: 4.2rem;
     }
-    .background{
-        height: 43.75rem;
+    .container-fluid>.row:last-child>.col-md-9{
+        padding-bottom: 14.7rem;
     }
     .menu{
         padding: 0;
@@ -266,16 +258,10 @@ body{
     .card-title{
         margin-bottom: 0.9rem;
     }
-    .meet-card:nth-of-type(2){
-        order: 2;
-    }
-    .meet-card:last-of-type{
-        order: 3;
-    }
     .meet-title{
         padding: 0;
         margin: 0;
-        margin-bottom: 2rem;
+        margin-bottom: 2.1rem;
     }
 
 }
@@ -287,11 +273,13 @@ body{
 }    
 @media screen and (min-width: 1440px){
     .container-fluid{
-        margin-bottom: 3.9rem;
+        margin-bottom: 4rem;
+    }
+    .container-fluid>.row:last-child>.col-lg-5{
+        padding-bottom: 14.7rem;
     }
     .background{
         background-size: 100%;
-        height: 44.0625rem;
     }
     .menu{
         margin-left: 3.9rem;
