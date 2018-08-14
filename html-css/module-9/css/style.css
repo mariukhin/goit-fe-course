@@ -117,6 +117,13 @@ body{
 .meet-colect{
     text-align: center;
 }
+.card-list {
+    padding: 0;
+    margin: 0 auto;
+    width: 15rem;
+    height: inherit;
+    list-style: none;
+}
 .meet-card{
     position: relative;
 }
@@ -125,8 +132,7 @@ body{
     display: block;
     z-index: 3;
     top: 5.4rem;
-    /* right: 2.9rem; */
-    right: 4rem;
+    right: 3.5rem;
     width: 2.5625rem;
     height: 2.5625rem;
     border: 0.25rem solid #ffffff;
@@ -143,7 +149,7 @@ body{
 }
 .card-title{
     margin: 0;
-    margin-bottom: 0.97rem;
+    margin-bottom: 0.8rem;
     font-family: 'Montserrat';
     font-size: 0.875rem;
     font-weight: 700;
@@ -193,7 +199,7 @@ body{
         margin-bottom: 1.75rem;
     }
     .title{
-        margin-bottom: 0.6rem;
+        margin-bottom: 0.45rem;
     }
     .subtitle{
         padding-left: 1.6rem;
@@ -204,11 +210,8 @@ body{
         margin: 0 auto;
         width: 13.875rem;
         height: 57.6875rem;
-        margin-bottom: 1.8125rem;
+        margin-bottom: 1.7rem;
     }
-    /* .meet-colect>.row>.col-12:nth-child(2)>.col-sm-12{
-        width: 80%;
-    } */
     .meet-colect>.row>.col-12:first-child{
         margin-bottom: 0.9375rem;
     }
@@ -219,14 +222,19 @@ body{
 }
 @media screen and (min-width: 768px) and (orientation: landscape){
     .container-fluid{
-        margin-bottom: 4.2rem;
+        margin-bottom: 4.35rem;
     }
-    /* .container-fluid>.row:last-child>.col-md-9{
-        padding-bottom: 14.7rem;
-    } */
+    .container-fluid>.row:last-child{
+        padding-bottom: 14.5rem;
+    }
+    .container-fluid>.row:first-child>.col-sm-12{
+        padding-top: 2.3rem;
+    }
+    .container-fluid>.row:first-child{
+        margin-bottom: 7.5rem;
+    }
     .menu{
         padding: 0;
-        /* padding-top: 2.3rem; */
         margin-bottom: 0;
     }
     .container{
@@ -234,20 +242,20 @@ body{
     }
     .logo{
         margin-bottom: 0;
-        /* padding-top: 2.875rem; */
         line-height: 1.75em;
     }
     .title{
         padding-top: 1.4rem;
         font-size: 3.25rem;
         line-height: 4rem;
-        margin-bottom: 1.8rem;
+        margin-bottom: 1.5rem;
     }
     .subtitle{
         padding: 0;
         margin: 0;
-        margin-bottom: 2.2rem;
+        margin-bottom: 2.1rem;
         font-size: 1.5rem;
+        line-height: 1.5rem;
     }
     .find{
         padding: 0.75rem 1.1rem 0.75rem;
@@ -264,8 +272,14 @@ body{
         margin: 0;
         width: 14rem;
     }
+    .card-photo{
+        margin-bottom: 1.1rem;
+    }
     .card-title{
         margin-bottom: 0.9rem;
+    }
+    .card-list {
+        width: 30.25rem;
     }
     .meet-colect>.row>.col-12:first-child{
         padding: 0;
@@ -274,25 +288,31 @@ body{
     }
 
 }
-@media screen and (min-width: 1200px) and (max-width: 1440px){
-    .meet-container{
+@media screen and (min-width: 992px) and (max-width: 1440px){
+    /* .meet-container{
         width: 88%;
+        height: 14.7rem;
+    } */
+    .card-list{
+        width: 45rem;
+    }
+    .meet-container{
         height: 14.7rem;
     }
 }    
 @media screen and (min-width: 1440px){
     .container-fluid{
-        margin-bottom: 4rem;
+        margin-bottom: 4.25rem;
     }
     .container-fluid>.row:last-child{
         padding-bottom: 14.5rem;
     }
-    .container-fluid>.row:first-child>.col-sm-12{
+    /* .container-fluid>.row:first-child>.col-sm-12{
         padding-top: 2.3rem;
-    }
-    .container-fluid>.row:first-child{
+    } */
+    /* .container-fluid>.row:first-child{
         margin-bottom: 7.5rem;
-    }
+    } */
     .background{
         background-size: 100%;
     }
@@ -307,11 +327,14 @@ body{
         margin-bottom: 1.6rem;
     }
     .subtitle{
-        margin-bottom: 2.4rem;
+        margin-bottom: 2rem;
     }
     .meet-container{
         width: 85%;
         height: 14.7rem;
+    }
+    .card-list{
+        width: 60rem;
     }
     .meet-colect>.row>.col-12:first-child{
         padding: 0;
