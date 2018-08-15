@@ -1,3 +1,5 @@
+'use strict';
+
 // const checkNumberType = function(num) {
 //     if(num % 2 === 0){
 //         const even = "Even";

@@ -1,3 +1,5 @@
+'use strict';
+
 // let name;
 // let guest;
 // name = 'Mango';

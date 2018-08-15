@@ -1,3 +1,5 @@
+'use strict';
+
 // const users = ['Mango', 'Poly', 'Ajax', 'Chelsey'];
 // console.log(users.length);
 // console.log(users[1]);

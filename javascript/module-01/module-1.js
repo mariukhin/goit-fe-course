@@ -1,6 +1,5 @@
 'user strict';
 
-
 const adminLogin = 'admin';
 const adminPassword = 'm4ngo1zh4ackz0r';
 const cancelText = 'Отменено пользователем!';
