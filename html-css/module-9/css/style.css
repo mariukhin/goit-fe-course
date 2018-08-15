@@ -289,12 +289,11 @@ body{
 
 }
 @media screen and (min-width: 992px) and (max-width: 1440px){
-    /* .meet-container{
-        width: 88%;
-        height: 14.7rem;
-    } */
+    .container-fluid>.row:last-child {
+        padding-bottom: 9rem;
+    }
     .card-list{
-        width: 45rem;
+        width: 50rem;
     }
     .meet-container{
         height: 14.7rem;
@@ -307,12 +306,6 @@ body{
     .container-fluid>.row:last-child{
         padding-bottom: 14.5rem;
     }
-    /* .container-fluid>.row:first-child>.col-sm-12{
-        padding-top: 2.3rem;
-    } */
-    /* .container-fluid>.row:first-child{
-        margin-bottom: 7.5rem;
-    } */
     .background{
         background-size: 100%;
     }
