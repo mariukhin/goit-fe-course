@@ -71,4 +71,78 @@
 // console.log( getPx(-1) ); // должно быть:  null
 // console.log( getPx(10) ); // должно быть:  null
 
+// const findLongestWord = function (str) {
+//     let strSplit = str.split(' ');
+//     let longestWord;
+//     let lgth = 0;
+
+//     for(let i = 0; i < strSplit.length; i++){
+//         if(strSplit[i].length > lgth){
+//             lgth = strSplit[i].length;
+//             longestWord = strSplit[i];
+//         }
+//     } 
+//     return longestWord;
+// }
+// console.log(
+//     findLongestWord("The quick brown fox jumped over the lazy dog")
+//   ); // вернет 'jumped'
+  
+//   console.log(
+//     findLongestWord("Google do a roll")
+//   ); // вернет 'Google'
+  
+//   console.log(
+//     findLongestWord("May the force be with you")
+//   ); // вернет 'force'
+
+// const findLargestNumber = function(numbers) {
+//     let longestNum;
+//     let lgth = 0;
+
+//     for(let i = 0; i < numbers.length; i++){
+//         if(numbers[i] > lgth){
+//             lgth = numbers[i];
+//             longestNum = numbers[i];
+//         }
+//     } 
+//     return longestNum;
+// }
+// console.log(findLargestNumber([1,2,3]));
+// console.log(findLargestNumber([27,12,18,5]));
+// console.log(findLargestNumber([31,128,14,74]));
+
+
+
+////////=== 7 задание не получилось ===//////
+
+// const uniqueNumbers = [2,1,4,9];
+// const addUniqueNumbers = function (...args) {
+//     const newArr = Array.from(args);
+//     for (let i = 0; i < newArr.length; i++) {
+//         for (let iter of uniqueNumbers) {
+//             if (iter !== newArr[i]) {
+//                 uniqueNumbers.push(iter);
+//                 continue;
+//             }else {
+//                 continue;
+//             }
+//         }
+//     }
+// }
+// addUniqueNumbers(1, 2, 3);
+// console.log(
+//   uniqueNumbers
+// ); // [2, 1, 4, 9, 3]
+
+// addUniqueNumbers(12, 2, 3, 19);
+// console.log(
+//   uniqueNumbers
+// ); // [2, 1, 4, 9, 3, 12, 19]
+
+// addUniqueNumbers(4, 5, 12, 3, 1, 2, 8);
+// console.log(
+//   uniqueNumbers
+// ); // [2, 1, 4, 9, 3, 12, 19, 5, 8]
+
 
