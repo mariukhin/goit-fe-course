@@ -113,22 +113,18 @@
 // console.log(findLargestNumber([31,128,14,74]));
 
 
-
-////////=== 7 задание не получилось ===//////
-
 // const uniqueNumbers = [2,1,4,9];
 // const addUniqueNumbers = function (...args) {
 //     const newArr = Array.from(args);
-//     for (let i = 0; i < newArr.length; i++) {
-//         for (let iter of uniqueNumbers) {
-//             if (iter !== newArr[i]) {
-//                 uniqueNumbers.push(iter);
-//                 continue;
-//             }else {
-//                 continue;
+//     nextInput:
+//         for (let i = 0; i < newArr.length; i++) {
+//             let numb = newArr[i];
+//             for (let j = 0; j < uniqueNumbers.length; j++) {
+//                 if(numb === uniqueNumbers[j]) continue nextInput;
+            
 //             }
+//             uniqueNumbers.push(numb);
 //         }
-//     }
 // }
 // addUniqueNumbers(1, 2, 3);
 // console.log(
@@ -144,5 +140,7 @@
 // console.log(
 //   uniqueNumbers
 // ); // [2, 1, 4, 9, 3, 12, 19, 5, 8]
+
+
 
 
