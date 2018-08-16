@@ -1,17 +1,3 @@
-.footer-text{
-    -ms-flex-preferred-size: 820px;
-        flex-basis: 820px;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
-    color: #333333;
-    font-family: 'Montserrat';
-    font-size: 14px;
-    line-height: 16px;
-    font-weight: 400;
-}
-.footer-name{
-    color: #f9c0c0;
-}
 .footer-form{
     -ms-flex-preferred-size: 380px;
         flex-basis: 380px;
@@ -29,7 +15,7 @@
     padding: 0;
     padding-left: 13px;
     border: 1px solid #e7e7e7;
-    color: #cccccc;
+    color: #dddbdb;
     font-family: 'Roboto';
     font-style: italic;
     font-size: 15px;

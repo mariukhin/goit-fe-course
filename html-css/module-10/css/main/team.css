@@ -1,8 +1,3 @@
-.team-descr{
-    margin: 0 auto;
-    width: 61.25rem;
-    margin-bottom: 5.625rem;
-}
 .team-collection>.team-card:first-child>.backgr-color>.hover-container:hover{
     -webkit-transform: translate(-0.625rem, -0.625rem);
         -ms-transform: translate(-0.625rem, -0.625rem);
@@ -57,7 +52,7 @@
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     opacity: 0;
-    width: 14.9375rem;
+    width: 14.6rem;
     height: 3.6875rem;
     background-color: #fce38a;
 }
@@ -80,9 +75,15 @@
     transition: all 200ms linear;
 }
 .icon{
-    width: 1.6rem;
-    height: 1.6rem;
+    width: 1.8rem;
+    height: 1.8rem;
     fill: #f38181;
+}
+.icon-facebook{
+    padding-left: 1.5rem;
+}
+.icon-pinterest{
+    padding-left: 0.1rem;
 }
 .social-button:hover{
     background-color: #f38181;
@@ -100,7 +101,7 @@
     width: 23.8125rem;;
     height: 29.4375rem;
     background-color: #95e1d3;
-    margin-bottom: 1.875rem;
+    margin-bottom: 1.7rem;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), 
 (min-resolution: 192dpi){

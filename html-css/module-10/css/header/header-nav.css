@@ -73,3 +73,10 @@
     line-height: 2.625rem;
     color: #ffffff; 
 }
+
+.header-text{
+    text-align: center;
+    margin: 0 auto;
+    width: 54%;
+    padding-bottom: 14.2rem;
+}

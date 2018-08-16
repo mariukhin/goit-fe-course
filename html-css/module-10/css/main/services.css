@@ -21,7 +21,7 @@
 .team-collection{
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-        justify-content: space-between;
+        justify-content: space-around;
     height: 34.0625rem;
 }
 .services-collection_card{

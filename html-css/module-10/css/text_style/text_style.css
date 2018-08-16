@@ -40,16 +40,14 @@
 }
 .header-subtitle{
     margin: 0;
-    margin-bottom: 2.8rem;
+    margin-bottom: 1.65rem;
     color: #ffffff;
     font-family: 'Kaushan Script';
     font-size: 4.5rem;
     font-weight: 400;
-    line-height: 3.75rem;
+    line-height: 6.5rem;
 }
 .header-title{
-    margin: 0 auto;
-    width: 60%;
     color: #ffffff;
     font-family: 'Montserrat';
     font-size: 9.4rem;
@@ -72,7 +70,6 @@
     font-size: 0.9em;
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 14.375rem;
 }
 
 
@@ -92,7 +89,7 @@
     margin-bottom: 1rem;
 }
 .team-subtitle{
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
 }
 .services-title, .team-title{
     position: relative;
@@ -108,7 +105,7 @@
 .services-title::after, .team-title::after{
     position: absolute;
     top: 4.4rem;
-    left: 34rem;
+    left: 36rem;
     display: block;
     width: 3.75rem;
     height: 0.1875rem;
@@ -116,21 +113,11 @@
     content: '';
 }
 .team-title::after{
-    left: 35.625rem;
+    top: 4.3rem;
 }    
 .team-title{
-    margin-bottom: 5.3125rem;
+    margin-bottom: 5rem;
 }
-/* .services-title{
-    vertical-align: top;
-    margin-bottom: 0.875rem;
-    font-family: 'Montserrat';
-    font-size: 1.4em;
-    font-weight: 400;
-    line-height: 1.4em;
-    text-transform: uppercase;
-    color: #333333;
-} */
 .card-title{
     vertical-align: top;
     margin-bottom: 0.875rem;
@@ -147,20 +134,42 @@
     line-height: 1.4em;
     color: #999999;
 }
+.team-descr{
+    margin: 0 auto;
+    line-height: 1.5em;
+    width: 62rem;
+    margin-bottom: 5.625rem;
+}
 .name{
     font-family: 'Montserrat';
-    font-size: 1em;
+    font-size: 0.8em;
     line-height: 1.3em;
-    font-weight: 400;
+    font-weight: 700;
     text-transform: uppercase;
     color: #333333;
-    margin-bottom: 0.6875rem;
+    margin-bottom: 0.5rem;
 }
 .occupation{
     color: #999999;
     font-family: 'Roboto';
-    font-size: 15px;
+    font-size: 1em;
     font-style: italic;
     font-weight: 400;
-    line-height: 18px;
+    line-height: 1.3em;
+}
+
+
+.footer-text{
+    -ms-flex-preferred-size: 51.25rem;
+        flex-basis: 51.25rem;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    color: #333333;
+    font-family: 'Montserrat';
+    font-size: 0.8em;
+    line-height: 1em;
+    font-weight: 700;
+}
+.footer-name{
+    color: #f9c0c0;
 }

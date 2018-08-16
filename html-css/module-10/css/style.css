@@ -27,7 +27,7 @@
     text-align: center;
     width: 76rem;
     margin: 0 auto;
-    padding-bottom: 80px;
+    padding-bottom: 4.9375rem;
 }  
 footer{
     display: -webkit-box;
@@ -39,7 +39,7 @@ footer{
     border-top: 1px solid #e5e5e5;
     width: 75rem;
     margin: 0 auto;
-    height: 60px;
+    height: 3.75rem;
 }     
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), 
 (min-resolution: 192dpi){
