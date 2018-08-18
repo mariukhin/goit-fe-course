@@ -38,7 +38,7 @@
          url('../../fonts/roboto-v18-latin-italic.woff2') format('woff2'), 
          url('../../fonts/roboto-v18-latin-italic.woff') format('woff');
 }
-.header-subtitle{
+.header-invitation_subtitle{
     margin: 0;
     margin-bottom: 1.65rem;
     color: #ffffff;
@@ -47,7 +47,7 @@
     font-weight: 400;
     line-height: 6.5rem;
 }
-.header-title{
+.header-invitation_title{
     color: #ffffff;
     font-family: 'Montserrat';
     font-size: 9.4rem;
@@ -56,7 +56,7 @@
     text-transform: uppercase;
     margin-bottom: 6.7rem;
 }
-.header-button{
+.header-invitation_button{
     border: 0.2em solid #ffffff;
     margin: 0;
     padding: 0;
@@ -73,14 +73,14 @@
 }
 
 
-.services-collection_card::before{
+.services_collection_card::before{
     position: absolute;
     left: 1.875rem;
     top: 0;
     width: 2rem;
     height: 2rem;
 }
-.services-subtitle, .team-subtitle{
+.main-services_subtitle, .main-team_subtitle{
     margin: 0;
     font-size: 1.5em;
     line-height: 1em;
@@ -88,10 +88,10 @@
     color: #333333;
     margin-bottom: 1rem;
 }
-.team-subtitle{
+.main-team_subtitle{
     margin-bottom: 1.2rem;
 }
-.services-title, .team-title{
+.main-services_title, .main-team_title{
     position: relative;
     margin: 0;
     margin-bottom: 6.7rem;
@@ -102,7 +102,7 @@
     text-transform: uppercase;
     color: #333333;
 }
-.services-title::after, .team-title::after{
+.main-services_title::after, .main-team_title::after{
     position: absolute;
     top: 4.4rem;
     left: 36rem;
@@ -112,10 +112,10 @@
     background-color: #f38181;
     content: '';
 }
-.team-title::after{
+.main-team_title::after{
     top: 4.3rem;
 }    
-.team-title{
+.main-team_title{
     margin-bottom: 5rem;
 }
 .card-title{
@@ -128,28 +128,28 @@
     text-transform: uppercase;
     color: #333333;
 }
-.card-descr, .team-descr{
+.card-descr, .main-team_descr{
     font-family: 'Roboto';
     font-size: 1em;
     line-height: 1.4em;
     color: #999999;
 }
-.team-descr{
+.main-team_descr{
     margin: 0 auto;
     line-height: 1.5em;
     width: 62rem;
     margin-bottom: 5.625rem;
 }
-.name{
+.team_collection_card_name{
     font-family: 'Montserrat';
     font-size: 0.8em;
     line-height: 1.3em;
-    font-weight: 700;
+    font-weight: 400;
     text-transform: uppercase;
     color: #333333;
     margin-bottom: 0.5rem;
 }
-.occupation{
+.team_collection_card_occupation{
     color: #999999;
     font-family: 'Roboto';
     font-size: 1em;
@@ -168,8 +168,9 @@
     font-family: 'Montserrat';
     font-size: 0.8em;
     line-height: 1em;
-    font-weight: 700;
+    font-weight: 400;
 }
-.footer-name{
+.footer-text_name{
     color: #f9c0c0;
+    font-weight: 700;
 }
