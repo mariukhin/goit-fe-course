@@ -61,7 +61,7 @@
     }
 }
 #first-hover_container{
-    background-image: url('../../img/team1.jpg');
+    background-image: url('../img/team1.jpg');
     &:hover{
         @include back-transform(team1);
         @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), 
