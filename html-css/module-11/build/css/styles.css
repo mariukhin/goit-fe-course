@@ -425,21 +425,17 @@ template {
 
 .main-services_subtitle,
 .main-team_subtitle {
-  margin: 0;
   font-family: "Kaushan Script";
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 1em;
   text-transform: none;
   color: #333333;
-  margin-bottom: 1rem;
 }
 
 .main-services_title,
 .main-team_title {
   position: relative;
-  margin: 0;
-  margin-bottom: 6.7rem;
   font-family: "Montserrat";
   font-size: 2em;
   font-weight: 700;
@@ -530,126 +526,17 @@ template {
 
 .main-services_subtitle,
 .main-team_subtitle {
-  margin: 0;
   font-family: "Kaushan Script";
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 1em;
   text-transform: none;
   color: #333333;
-  margin-bottom: 1rem;
 }
 
 .main-services_title,
 .main-team_title {
   position: relative;
-  margin: 0;
-  margin-bottom: 6.7rem;
-  font-family: "Montserrat";
-  font-size: 2em;
-  font-weight: 700;
-  line-height: 1em;
-  text-transform: uppercase;
-  color: #333333;
-}
-
-.main-services_title::after,
-.main-team_title::after {
-  position: absolute;
-  top: 4.4rem;
-  left: 36rem;
-  display: block;
-  width: 3.75rem;
-  height: 0.1875rem;
-  background-color: #f38181;
-  content: '';
-}
-
-.main-services_collection,
-.main-team_collection {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  min-height: 15.1rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: space-between;
-}
-
-.services_collection_card::before {
-  position: absolute;
-  left: 1.875rem;
-  top: 0;
-  width: 2rem;
-  height: 2rem;
-}
-
-@font-face {
-  font-family: 'Kaushan Script';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Kaushan Script"), local("KaushanScript-Regular"), url("../../fonts/kaushan-script-v6-latin-regular.woff2") format("woff2"), url("../../fonts/kaushan-script-v6-latin-regular.woff") format("woff");
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("../../fonts/montserrat-v12-latin-regular.woff2") format("woff2"), url("../../fonts/montserrat-v12-latin-regular.woff") format("woff");
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("../../fonts/montserrat-v12-latin-700.woff2") format("woff2"), url("../../fonts/montserrat-v12-latin-700.woff") format("woff");
-}
-
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Roboto"), local("Roboto-Regular"), url("../../fonts/roboto-v18-latin-regular.woff2") format("woff2"), url("../../fonts/roboto-v18-latin-regular.woff") format("woff");
-}
-
-@font-face {
-  font-family: 'Roboto';
-  font-style: italic;
-  font-weight: 400;
-  src: local("Roboto Italic"), local("Roboto-Italic"), url("../../fonts/roboto-v18-latin-italic.woff2") format("woff2"), url("../../fonts/roboto-v18-latin-italic.woff") format("woff");
-}
-
-.header-nav_cart-icon,
-.header-nav_search-icon {
-  flex-basis: 1.125rem;
-  fill: #ffffff;
-  fill-rule: evenodd;
-  cursor: pointer;
-}
-
-.nav-menu_link {
-  transition: color 200ms linear;
-  transition: border 200ms linear;
-}
-
-.main-services_subtitle,
-.main-team_subtitle {
-  margin: 0;
-  font-family: "Kaushan Script";
-  font-size: 1.5rem;
-  font-weight: 400;
-  line-height: 1em;
-  text-transform: none;
-  color: #333333;
-  margin-bottom: 1rem;
-}
-
-.main-services_title,
-.main-team_title {
-  position: relative;
-  margin: 0;
-  margin-bottom: 6.7rem;
   font-family: "Montserrat";
   font-size: 2em;
   font-weight: 700;
@@ -732,7 +619,7 @@ template {
 .header-invitation {
   text-align: center;
   margin: 0 auto;
-  width: 54%;
+  width: 58%;
   padding-bottom: 14.2rem;
 }
 
@@ -749,7 +636,7 @@ template {
 
 .header-invitation_subtitle {
   margin: 0;
-  margin-bottom: 1.65rem;
+  margin-bottom: 2.5rem;
   font-family: "Kaushan Script";
   font-size: 4.5rem;
   font-weight: 400;
@@ -871,21 +758,17 @@ template {
 
 .main-services_subtitle,
 .main-team_subtitle {
-  margin: 0;
   font-family: "Kaushan Script";
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 1em;
   text-transform: none;
   color: #333333;
-  margin-bottom: 1rem;
 }
 
 .main-services_title,
 .main-team_title {
   position: relative;
-  margin: 0;
-  margin-bottom: 6.7rem;
   font-family: "Montserrat";
   font-size: 2em;
   font-weight: 700;
@@ -938,6 +821,14 @@ template {
   min-height: 15.1rem;
 }
 
+.main-services_subtitle {
+  margin-bottom: 1rem;
+}
+
+.main-services_title {
+  margin-bottom: 6.7rem;
+}
+
 .services_collection_card {
   position: relative;
   text-align: left;
@@ -956,7 +847,7 @@ template {
   color: #333333;
 }
 
-.services_collection_card_subtitle {
+.services_collection_card_descr {
   font-family: "Roboto";
   font-size: 1em;
   font-weight: 400;
@@ -1039,21 +930,17 @@ template {
 
 .main-services_subtitle,
 .main-team_subtitle {
-  margin: 0;
   font-family: "Kaushan Script";
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 1em;
   text-transform: none;
   color: #333333;
-  margin-bottom: 1rem;
 }
 
 .main-services_title,
 .main-team_title {
   position: relative;
-  margin: 0;
-  margin-bottom: 6.7rem;
   font-family: "Montserrat";
   font-size: 2em;
   font-weight: 700;
@@ -1094,6 +981,11 @@ template {
   height: 2rem;
 }
 
+.main-team {
+  width: 75rem;
+  margin: 0 auto;
+}
+
 .main-team_title {
   margin-bottom: 5.3125rem;
 }
@@ -1103,7 +995,7 @@ template {
 }
 
 .main-team_subtitle {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.1rem;
 }
 
 .main-team_descr {
@@ -1115,12 +1007,11 @@ template {
   color: #999999;
   margin: 0 auto;
   width: 62rem;
-  margin-bottom: 5.625rem;
+  margin-bottom: 5.5rem;
 }
 
 .main-team_collection {
   display: flex;
-  justify-content: space-between;
   justify-content: space-around;
   height: 34.0625rem;
 }
@@ -1302,21 +1193,17 @@ template {
 
 .main-services_subtitle,
 .main-team_subtitle {
-  margin: 0;
   font-family: "Kaushan Script";
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 1em;
   text-transform: none;
   color: #333333;
-  margin-bottom: 1rem;
 }
 
 .main-services_title,
 .main-team_title {
   position: relative;
-  margin: 0;
-  margin-bottom: 6.7rem;
   font-family: "Montserrat";
   font-size: 2em;
   font-weight: 700;
@@ -1373,24 +1260,26 @@ template {
   flex-basis: 51.25rem;
   flex-shrink: 0;
   font-family: "Montserrat";
-  font-size: 14px;
+  font-size: 0.8em;
   font-weight: 400;
-  line-height: 16px;
+  line-height: 1em;
   text-transform: none;
   color: #333333;
 }
 
-.footer-text .footer-name {
+.footer-text_name {
   color: #f9c0c0;
+  font-weight: 700;
 }
 
 .footer-form {
   flex-basis: 23.75rem;
   display: flex;
   justify-content: space-between;
+  justify-content: flex-start;
 }
 
-.email {
+.footer-form_email {
   flex-basis: 15rem;
   height: 2.3125rem;
   padding: 0;
@@ -1405,7 +1294,7 @@ template {
   font-style: italic;
 }
 
-.submit {
+.footer-form_submit {
   box-sizing: content-box;
   padding: 0;
   border: 0;

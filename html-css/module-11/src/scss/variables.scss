@@ -84,7 +84,6 @@ $butheight: 0, $backcolor: transparent){
     position: $pos;
     display: $dis;
 }
-////////////-----header-nav.scss------//////////////
 @mixin flex($value: 'all'){
     display: -webkit-box;
     display: -ms-flexbox;
@@ -126,7 +125,6 @@ $butheight: 0, $backcolor: transparent){
     transition: border 200ms linear;
 }
 
-////////////-----text_style.scss------//////////////
 
 @mixin font_style($family: '', $fsize: '', $fweight: 400, $lheight: '',$ftrans: uppercase, $fcolor: ''){
     font-family: $family;
@@ -138,14 +136,10 @@ $butheight: 0, $backcolor: transparent){
 }
 
 %subtitle{
-    margin: 0;
     @include font_style($kaush, 1.5rem, 400, 1em, none, sub-black);
-    margin-bottom: 1rem;
 }
 %title{
     position: relative;
-    margin: 0;
-    margin-bottom: 6.7rem;
     @include font_style($mont, 2em, 700, 1em, uppercase ,sub-black);
 }
 %pseudo{
@@ -158,10 +152,6 @@ $butheight: 0, $backcolor: transparent){
     background-color: map-get($map: $colors, $key: pseudo);
     content: '';
 }
-/////////////-------main---------////////////
-
-////////////-----services.scss------//////////////
-
 %collection{
     list-style: none;
     margin: 0;
@@ -176,8 +166,6 @@ $butheight: 0, $backcolor: transparent){
     width: 2rem;
     height: 2rem;
 }
-
-////////////----------team.scss-----------/////////////
 
 @mixin back-transform($team){
     -webkit-transform: translate(-0.625rem, -0.625rem);

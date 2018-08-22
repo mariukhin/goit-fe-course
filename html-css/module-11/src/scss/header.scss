@@ -34,7 +34,7 @@
     &-invitation{
         text-align: center;
         margin: 0 auto;
-        width: 54%;
+        width: 58%;
         padding-bottom: 14.2rem;
         &_title{
             margin: 0 auto;
@@ -43,7 +43,7 @@
         }
         &_subtitle{
             margin: 0;
-            margin-bottom: 1.65rem;
+            margin-bottom: 2.5rem;
             @include font_style($kaush, 4.5rem, 400, 4.5rem, none, text-white);
         }
         &_button{

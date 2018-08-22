@@ -13,9 +13,11 @@
         }
         &_subtitle{
             @extend %subtitle;
+            margin-bottom: 1rem;
         }
         &_title{
             @extend %title;
+            margin-bottom: 6.7rem;
             &::after{
                 @extend %pseudo;
             }
@@ -34,7 +36,7 @@
         margin-bottom: 0.875rem;
         @include font_style($mont, 0.9em, 400, 1em, uppercase, sub-black);
     }
-    &_subtitle{
+    &_descr{
         @include font_style($roboto, 1em, 400, 1.4em, none, deskr-gray);
     }
     &::before{

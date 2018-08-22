@@ -1,6 +1,8 @@
 @import 'variables';
 
 .main-team{
+    width: 75rem;
+    margin: 0 auto;
     &_title{
         @extend %title;
         margin-bottom: 5.3125rem;
@@ -11,17 +13,19 @@
     }
     &_subtitle{
         @extend %subtitle;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1.1rem;
     }
     &_descr{
         @include font_style($roboto, 1em, 400, 1.5em, none, deskr-gray);
         margin: 0 auto;
         width: 62rem;
-        margin-bottom: 5.625rem;
+        margin-bottom: 5.5rem;
     }
     &_collection{
         @extend %collection;
-        @include flex(hor);
+        display: -webkit-box;
+            display: -ms-flexbox;
+                display: flex;
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-around;
