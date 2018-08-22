@@ -379,35 +379,35 @@ template {
   font-family: 'Kaushan Script';
   font-style: normal;
   font-weight: 400;
-  src: local("Kaushan Script"), local("KaushanScript-Regular"), url("../../fonts/kaushan-script-v6-latin-regular.woff2") format("woff2"), url("../../fonts/kaushan-script-v6-latin-regular.woff") format("woff");
+  src: local("Kaushan Script"), local("KaushanScript-Regular"), url("../fonts/kaushan-script-v6-latin-regular.woff2") format("woff2"), url("../fonts/kaushan-script-v6-latin-regular.woff") format("woff");
 }
 
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("../../fonts/montserrat-v12-latin-regular.woff2") format("woff2"), url("../../fonts/montserrat-v12-latin-regular.woff") format("woff");
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("../fonts/montserrat-v12-latin-regular.woff2") format("woff2"), url("../fonts/montserrat-v12-latin-regular.woff") format("woff");
 }
 
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("../../fonts/montserrat-v12-latin-700.woff2") format("woff2"), url("../../fonts/montserrat-v12-latin-700.woff") format("woff");
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("../fonts/montserrat-v12-latin-700.woff2") format("woff2"), url("../fonts/montserrat-v12-latin-700.woff") format("woff");
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  src: local("Roboto"), local("Roboto-Regular"), url("../../fonts/roboto-v18-latin-regular.woff2") format("woff2"), url("../../fonts/roboto-v18-latin-regular.woff") format("woff");
+  src: local("Roboto"), local("Roboto-Regular"), url("../fonts/roboto-v18-latin-regular.woff2") format("woff2"), url("../fonts/roboto-v18-latin-regular.woff") format("woff");
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: italic;
   font-weight: 400;
-  src: local("Roboto Italic"), local("Roboto-Italic"), url("../../fonts/roboto-v18-latin-italic.woff2") format("woff2"), url("../../fonts/roboto-v18-latin-italic.woff") format("woff");
+  src: local("Roboto Italic"), local("Roboto-Italic"), url("../fonts/roboto-v18-latin-italic.woff2") format("woff2"), url("../fonts/roboto-v18-latin-italic.woff") format("woff");
 }
 
 .header-nav_cart-icon,
@@ -480,35 +480,35 @@ template {
   font-family: 'Kaushan Script';
   font-style: normal;
   font-weight: 400;
-  src: local("Kaushan Script"), local("KaushanScript-Regular"), url("../../fonts/kaushan-script-v6-latin-regular.woff2") format("woff2"), url("../../fonts/kaushan-script-v6-latin-regular.woff") format("woff");
+  src: local("Kaushan Script"), local("KaushanScript-Regular"), url("../fonts/kaushan-script-v6-latin-regular.woff2") format("woff2"), url("../fonts/kaushan-script-v6-latin-regular.woff") format("woff");
 }
 
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("../../fonts/montserrat-v12-latin-regular.woff2") format("woff2"), url("../../fonts/montserrat-v12-latin-regular.woff") format("woff");
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("../fonts/montserrat-v12-latin-regular.woff2") format("woff2"), url("../fonts/montserrat-v12-latin-regular.woff") format("woff");
 }
 
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("../../fonts/montserrat-v12-latin-700.woff2") format("woff2"), url("../../fonts/montserrat-v12-latin-700.woff") format("woff");
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("../fonts/montserrat-v12-latin-700.woff2") format("woff2"), url("../fonts/montserrat-v12-latin-700.woff") format("woff");
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  src: local("Roboto"), local("Roboto-Regular"), url("../../fonts/roboto-v18-latin-regular.woff2") format("woff2"), url("../../fonts/roboto-v18-latin-regular.woff") format("woff");
+  src: local("Roboto"), local("Roboto-Regular"), url("../fonts/roboto-v18-latin-regular.woff2") format("woff2"), url("../fonts/roboto-v18-latin-regular.woff") format("woff");
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: italic;
   font-weight: 400;
-  src: local("Roboto Italic"), local("Roboto-Italic"), url("../../fonts/roboto-v18-latin-italic.woff2") format("woff2"), url("../../fonts/roboto-v18-latin-italic.woff") format("woff");
+  src: local("Roboto Italic"), local("Roboto-Italic"), url("../fonts/roboto-v18-latin-italic.woff2") format("woff2"), url("../fonts/roboto-v18-latin-italic.woff") format("woff");
 }
 
 .header-nav_cart-icon,
@@ -712,35 +712,35 @@ template {
   font-family: 'Kaushan Script';
   font-style: normal;
   font-weight: 400;
-  src: local("Kaushan Script"), local("KaushanScript-Regular"), url("../../fonts/kaushan-script-v6-latin-regular.woff2") format("woff2"), url("../../fonts/kaushan-script-v6-latin-regular.woff") format("woff");
+  src: local("Kaushan Script"), local("KaushanScript-Regular"), url("../fonts/kaushan-script-v6-latin-regular.woff2") format("woff2"), url("../fonts/kaushan-script-v6-latin-regular.woff") format("woff");
 }
 
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("../../fonts/montserrat-v12-latin-regular.woff2") format("woff2"), url("../../fonts/montserrat-v12-latin-regular.woff") format("woff");
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("../fonts/montserrat-v12-latin-regular.woff2") format("woff2"), url("../fonts/montserrat-v12-latin-regular.woff") format("woff");
 }
 
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("../../fonts/montserrat-v12-latin-700.woff2") format("woff2"), url("../../fonts/montserrat-v12-latin-700.woff") format("woff");
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("../fonts/montserrat-v12-latin-700.woff2") format("woff2"), url("../fonts/montserrat-v12-latin-700.woff") format("woff");
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  src: local("Roboto"), local("Roboto-Regular"), url("../../fonts/roboto-v18-latin-regular.woff2") format("woff2"), url("../../fonts/roboto-v18-latin-regular.woff") format("woff");
+  src: local("Roboto"), local("Roboto-Regular"), url("../fonts/roboto-v18-latin-regular.woff2") format("woff2"), url("../fonts/roboto-v18-latin-regular.woff") format("woff");
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: italic;
   font-weight: 400;
-  src: local("Roboto Italic"), local("Roboto-Italic"), url("../../fonts/roboto-v18-latin-italic.woff2") format("woff2"), url("../../fonts/roboto-v18-latin-italic.woff") format("woff");
+  src: local("Roboto Italic"), local("Roboto-Italic"), url("../fonts/roboto-v18-latin-italic.woff2") format("woff2"), url("../fonts/roboto-v18-latin-italic.woff") format("woff");
 }
 
 .header-nav_cart-icon,
@@ -884,35 +884,35 @@ template {
   font-family: 'Kaushan Script';
   font-style: normal;
   font-weight: 400;
-  src: local("Kaushan Script"), local("KaushanScript-Regular"), url("../../fonts/kaushan-script-v6-latin-regular.woff2") format("woff2"), url("../../fonts/kaushan-script-v6-latin-regular.woff") format("woff");
+  src: local("Kaushan Script"), local("KaushanScript-Regular"), url("../fonts/kaushan-script-v6-latin-regular.woff2") format("woff2"), url("../fonts/kaushan-script-v6-latin-regular.woff") format("woff");
 }
 
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("../../fonts/montserrat-v12-latin-regular.woff2") format("woff2"), url("../../fonts/montserrat-v12-latin-regular.woff") format("woff");
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("../fonts/montserrat-v12-latin-regular.woff2") format("woff2"), url("../fonts/montserrat-v12-latin-regular.woff") format("woff");
 }
 
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("../../fonts/montserrat-v12-latin-700.woff2") format("woff2"), url("../../fonts/montserrat-v12-latin-700.woff") format("woff");
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("../fonts/montserrat-v12-latin-700.woff2") format("woff2"), url("../fonts/montserrat-v12-latin-700.woff") format("woff");
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  src: local("Roboto"), local("Roboto-Regular"), url("../../fonts/roboto-v18-latin-regular.woff2") format("woff2"), url("../../fonts/roboto-v18-latin-regular.woff") format("woff");
+  src: local("Roboto"), local("Roboto-Regular"), url("../fonts/roboto-v18-latin-regular.woff2") format("woff2"), url("../fonts/roboto-v18-latin-regular.woff") format("woff");
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: italic;
   font-weight: 400;
-  src: local("Roboto Italic"), local("Roboto-Italic"), url("../../fonts/roboto-v18-latin-italic.woff2") format("woff2"), url("../../fonts/roboto-v18-latin-italic.woff") format("woff");
+  src: local("Roboto Italic"), local("Roboto-Italic"), url("../fonts/roboto-v18-latin-italic.woff2") format("woff2"), url("../fonts/roboto-v18-latin-italic.woff") format("woff");
 }
 
 .header-nav_cart-icon,
@@ -1063,7 +1063,7 @@ template {
 }
 
 #first-hover_container {
-  background-image: url("../../img/team1.jpg");
+  background-image: url("../img/team1.jpg");
 }
 
 #first-hover_container:hover {
@@ -1147,35 +1147,35 @@ template {
   font-family: 'Kaushan Script';
   font-style: normal;
   font-weight: 400;
-  src: local("Kaushan Script"), local("KaushanScript-Regular"), url("../../fonts/kaushan-script-v6-latin-regular.woff2") format("woff2"), url("../../fonts/kaushan-script-v6-latin-regular.woff") format("woff");
+  src: local("Kaushan Script"), local("KaushanScript-Regular"), url("../fonts/kaushan-script-v6-latin-regular.woff2") format("woff2"), url("../fonts/kaushan-script-v6-latin-regular.woff") format("woff");
 }
 
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("../../fonts/montserrat-v12-latin-regular.woff2") format("woff2"), url("../../fonts/montserrat-v12-latin-regular.woff") format("woff");
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("../fonts/montserrat-v12-latin-regular.woff2") format("woff2"), url("../fonts/montserrat-v12-latin-regular.woff") format("woff");
 }
 
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("../../fonts/montserrat-v12-latin-700.woff2") format("woff2"), url("../../fonts/montserrat-v12-latin-700.woff") format("woff");
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("../fonts/montserrat-v12-latin-700.woff2") format("woff2"), url("../fonts/montserrat-v12-latin-700.woff") format("woff");
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  src: local("Roboto"), local("Roboto-Regular"), url("../../fonts/roboto-v18-latin-regular.woff2") format("woff2"), url("../../fonts/roboto-v18-latin-regular.woff") format("woff");
+  src: local("Roboto"), local("Roboto-Regular"), url("../fonts/roboto-v18-latin-regular.woff2") format("woff2"), url("../fonts/roboto-v18-latin-regular.woff") format("woff");
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: italic;
   font-weight: 400;
-  src: local("Roboto Italic"), local("Roboto-Italic"), url("../../fonts/roboto-v18-latin-italic.woff2") format("woff2"), url("../../fonts/roboto-v18-latin-italic.woff") format("woff");
+  src: local("Roboto Italic"), local("Roboto-Italic"), url("../fonts/roboto-v18-latin-italic.woff2") format("woff2"), url("../fonts/roboto-v18-latin-italic.woff") format("woff");
 }
 
 .header-nav_cart-icon,
