@@ -12,16 +12,54 @@
 
     &-nav{
         @include flex(hor);
+        @include flex(align);
         padding-top: 1.875rem;
         min-height: 2.8125rem;
         padding-bottom: 5.375rem;
+        &_cart-icon{
+            height: 0.9375rem;
+            @extend %header-icons;
+            &:hover{
+                fill: #fce38a;
+            }
+        }
+        &_search-icon{
+            height: 1.125rem;
+            @extend %header-icons;
+            &:hover{
+                fill: #fce38a;
+            }
+        }
+    }
+    &-invitation{
+        text-align: center;
+        margin: 0 auto;
+        width: 54%;
+        padding-bottom: 14.2rem;
+        &_title{
+            margin: 0 auto;
+            @include font_style($mont, 9.4rem, 700, 8.9rem, uppercase, text-white);
+            margin-bottom: 6.7rem;
+        }
+        &_subtitle{
+            margin: 0;
+            margin-bottom: 1.65rem;
+            @include font_style($kaush, 4.5rem, 400, 4.5rem, none, text-white);
+        }
+        &_button{
+            border: 0.2em solid #ffffff;
+            margin: 0;
+            @include buttons($marnum: null,$butwidth: 10rem, $butheight: 2.5rem);
+        
+            @include font_style($mont, 0.9rem, 700, '',uppercase, text-white);
+        }
     }
     @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), 
     (min-resolution: 192dpi){
         background-image: $line-grad, url('../img/Layer_15@2x.jpg');
     }    
 }
-.wrapper{
+.nav_wrapper{
     width: 65rem;
     margin: 0 auto;
 }
@@ -35,22 +73,23 @@
     line-height: 2.5rem;
     &_item{
         cursor: pointer;
-        &:hover .cart-icon,
-        &:hover .search-icon{
-            fill: map-get($map: $colors, $key: hover);
-        }
-        &:hover .item-link{
+        &:hover .nav-menu_link{
             color: map-get($map: $colors, $key: hover);
             padding-bottom: 0.5em;
             border-bottom: 0.2em solid map-get($map: $colors, $key: hover);
         }    
     }
+    &_link{
+        text-decoration: none;
+        @include font_style($mont, 0.875rem, 400, 0.875rem, uppercase, text-white);
+        @extend %header-transitions;
+    }
 }
-.cart-icon{
-    height: 15px;
-    @extend %icon;
-}
-.search-icon{
-    height: 18px;
-    @extend %icon;
+.nav-logo{
+    -ms-flex-preferred-size: 25.75rem;
+        flex-basis: 25.75rem;
+    text-decoration: none;
+    text-align: left;
+
+    @include font_style($mont, 1.875rem, 700, 2.625rem, none, text-white);
 }

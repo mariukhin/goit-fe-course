@@ -4,25 +4,39 @@
     text-align: center;
     width: 76rem;
     margin: 0 auto;
-    padding-bottom: 5rem;
+    padding-bottom: 4.9375rem;
     &-services{
         padding-bottom: 5.5rem;
+        min-height: 15.1rem;
+        &_collection{
+            @extend %collection;
+        }
+        &_subtitle{
+            @extend %subtitle;
+        }
+        &_title{
+            @extend %title;
+            &::after{
+                @extend %pseudo;
+            }
+        }
     }
 }   
-.services-collection{
-    @extend %collection;
-}
-.team-collection{
-    @extend %collection;
-    @include flex(hor);
-    height: 34.0625rem;
-}
-.services-collection_card{
+.services_collection_card{
     position: relative;
     text-align: left;
     -ms-flex-preferred-size: 18.75rem;
         flex-basis: 18.75rem;
     padding-left: 5rem;
+
+    &_title{
+        vertical-align: top;
+        margin-bottom: 0.875rem;
+        @include font_style($mont, 0.9em, 400, 1em, uppercase, sub-black);
+    }
+    &_subtitle{
+        @include font_style($roboto, 1em, 400, 1.4em, none, deskr-gray);
+    }
     &::before{
         @extend %icon-service;
     }
