@@ -857,27 +857,27 @@ template {
 }
 
 .services_collection_card:first-child::before {
-  content: url("../img/alarm.png");
+  content: url("build/img/alarm.png");
 }
 
 .services_collection_card:nth-child(2)::before {
-  content: url("../img/line-graph.png");
+  content: url("build/img/line-graph.png");
 }
 
 .services_collection_card:nth-child(3)::before {
-  content: url("../img/computer.png");
+  content: url("build/img/computer.png");
 }
 
 .services_collection_card:nth-child(4)::before {
-  content: url("../img/book.png");
+  content: url("build/img/book.png");
 }
 
 .services_collection_card:nth-child(5)::before {
-  content: url("../img/home.png");
+  content: url("build/img/home.png");
 }
 
 .services_collection_card:last-child::before {
-  content: url("../img/digital.png");
+  content: url("build/img/digital.png");
 }
 
 @font-face {
