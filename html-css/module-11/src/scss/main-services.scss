@@ -43,22 +43,22 @@
         @extend %icon-service;
     }
     &:first-child::before{
-        content: url('build/img/alarm.png');
+        content: url('../img/alarm.png');
     }
     &:nth-child(2)::before{
-        content: url('build/img/line-graph.png');
+        content: url('../img/line-graph.png');
     }
     &:nth-child(3)::before{
-        content: url('build/img/computer.png');
+        content: url('../img/computer.png');
     }
     &:nth-child(4)::before{
-        content: url('build/img/book.png');
+        content: url('../img/book.png');
     }
     &:nth-child(5)::before{
-        content: url('build/img/home.png');
+        content: url('../img/home.png');
     }
     &:last-child::before{
-        content: url('build/img/digital.png');
+        content: url('../img/digital.png');
     }    
 }
 
