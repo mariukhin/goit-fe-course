@@ -1,3 +1,4 @@
+'use strict';
 // const users = [
 //     {id: '001', name: 'Poly'},
 //     {id: '002', name: 'Max'},
@@ -165,12 +166,70 @@
 //     getGuestById(guests, 5)
 // ); // undefined
 
-const order = {
+// const order = {
+//     bread: 10,
+//     apples: 25,
+//     chicken: 60,
+//     milk: 15,
+//     cheese: 40
+// };
+// const sum = (arr) => arr.reduce((acc, value) => acc + value, 0);
+// console.log(sum(Object.values(order))); // 150
+
+const products = {
     bread: 10,
-    apples: 25,
-    chicken: 60,
     milk: 15,
-    cheese: 40
+    apples: 20,
+    cheese: 30,
+    chicken: 40
 };
-const sum = (arr) => arr.reduce((acc, value) => acc + value, 0);
-console.log(sum(Object.values(order))); // 150
+  
+const orderA = {
+    bread: 2,
+    apples: 4,
+    chicken: 1
+};
+  
+const orderB = {
+    bread: 1,
+    milk: 2,
+    cheese: 3
+};
+
+const getTotalPrice = (products, order) =>{
+    const arrProd = Object.keys(products);
+    const arrOrder = Object.keys(order);
+    let sum = 0;
+    const newArr = arrProd.reduce((acc,num) => {
+        if(arrOrder.includes(num)){
+            sum = products[num]*order[num];
+            acc += sum;
+            
+        }
+        return acc;
+    },0);
+    return newArr;
+};
+  // Вызовы функции для проверки
+console.log(getTotalPrice(products, orderA)); // 140
+console.log(getTotalPrice(products, orderB)); // 130
+
+
+// const guestsA = [
+//     { name: "Mango", isActive: true },
+//     { name: "Poly", isActive: false },
+//     { name: "Ajax", isActive: true }
+//   ];
+  
+//   const guestsB = [
+//     { name: "Mango", isActive: true },
+//     { name: "Poly", isActive: true },
+//     { name: "Ajax", isActive: true }
+//   ];
+  
+//   const allGuestsActive = (guests) => guests.every(item => item.isActive);
+//   // Вызовы функции для проверки
+//   console.log(allGuestsActive(guestsA)); // false
+//   console.log(allGuestsActive(guestsB)); // true
+  
+  
