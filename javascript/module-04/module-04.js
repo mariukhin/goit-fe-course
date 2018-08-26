@@ -1,3 +1,4 @@
+'use strict';
 const products = {
     bread: 10,
     milk: 15,
