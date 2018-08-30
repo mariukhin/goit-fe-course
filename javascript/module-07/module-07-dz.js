@@ -89,6 +89,7 @@
 //     body.insertBefore(block, null);
 // }
 // createPostCard();
+
 const root = document.querySelector('#root');
 const createBoxes = (num) => {
     const container = document.createElement('div');
