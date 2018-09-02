@@ -58,5 +58,62 @@
 //     console.log(item.getAttribute('src'));
 // }));
 
-const btnDel = Array.from(document.querySelectorAll('button'));
-btnDel.forEach(item => item.addEventListener('click', () => item.parentNode.remove()));
+// const btnDel = Array.from(document.querySelectorAll('button'));
+// btnDel.forEach(item => item.addEventListener('click', () => item.parentNode.remove()));
+
+// const inputs = Array.from(document.querySelectorAll('input'));
+// const checkVal = (event) => {
+//     const target = event.target;
+//     if(Number(target.dataset.length) <= (target.value.length)-1){
+//         target.style.outline = '2px solid #ff0000';
+//     }else{
+//         target.style.outline = '2px solid #00ff04';
+//     }
+// };
+// inputs.forEach(item => item.addEventListener('blur', checkVal));
+
+// const input = document.querySelector('.input');
+// const seeVal = (event) => {
+//     const target = event.target;
+//     const res = document.querySelector('.input-value');
+//     res.textContent = `Current input value: ${target.value}`;
+// };
+// input.addEventListener('focus', () => console.log('Input is in focus!'));
+// input.addEventListener('input', seeVal);
+
+// const btnView = document.querySelector('.js-open-modal');
+// const btnClose = document.querySelector('.js-close-modal');
+// const modal = document.querySelector('.modal');
+// // const modalBack = document.querySelector('.js-modal-backdrop');
+
+// const viewModal = () => {
+//     modal.classList.remove('modal-hidden');
+// };
+// const closeModal = () => {
+//     modal.classList.add('modal-hidden');
+// };
+// // const toggleModal = () => {
+// //     modal.classList.toggle('modal-hidden');
+// // }
+// btnView.addEventListener('click', viewModal);
+// btnClose.addEventListener('click', closeModal);
+// // modal.addEventListener('click', closeModal);
+
+const menu = document.querySelector('.js-menu');
+const links = menu.querySelectorAll('.menu-link');
+
+const itemClick = ({target}) => {
+    const nodeName = target.nodeName;
+    event.preventDefault();
+
+    if(nodeName !== 'A') return;
+
+    links.forEach(item => {
+        if(item !== target){
+            item.classList.remove('menu-link-active');
+        }else{
+            item.classList.add('menu-link-active');
+        }
+    });
+};
+menu.addEventListener('click', itemClick);
