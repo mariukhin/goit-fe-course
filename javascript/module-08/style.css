@@ -401,7 +401,7 @@ body {
   font-family: inherit;
 } */
 
-* {
+/* * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -432,4 +432,30 @@ body {
 .menu-link-active {
   background-color: #FF4081;
   color: #ffffff;
+} */
+ul{
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 66%;
+  min-height: 440px;
+  justify-content: space-between;
+  align-content: space-between;
+}
+li{
+  flex-basis: 320px;
+  padding: 0;
+  list-style: none;
+}
+.photo{
+  display: block;
+  height: 214px;
+  width: 320px;
+}
+.fullphoto{
+  display: block;
+  margin: 0 auto;
+  width: 1280px;
 }
