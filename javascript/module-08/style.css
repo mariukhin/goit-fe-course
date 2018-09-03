@@ -439,7 +439,7 @@ ul{
   padding-top: 20px;
   display: flex;
   flex-wrap: wrap;
-  width: 66%;
+  width: 88%;
   min-height: 440px;
   justify-content: space-between;
   align-content: space-between;
@@ -458,4 +458,8 @@ li{
   display: block;
   margin: 0 auto;
   width: 1280px;
+  height: 853px;
+}
+.photo-active{
+  outline: 3px solid #4400ff;
 }
