@@ -1,119 +1,115 @@
 'use strict';
 
-// const btn = document.querySelector('.button');
-// const addclick = () => {
-//     let num = Number(btn.textContent);
-//     btn.textContent = String(num+1);
-// };
-// btn.addEventListener('click', addclick);
+// const colors = ['#FFFFFF', '#F44336', '#2196F3', '#4CAF50', '#FF9800', '#009688', '#795548'];
+// const btnStart = document.querySelector('.js-start');
+// const btnStop = document.querySelector('.js-stop');
+// let timerId = null;
+// btnStart.addEventListener('click', () =>{
+//     timerId = setInterval(() => {
+//         let color = colors[Math.floor(Math.random()*colors.length)];
+//         const body = document.body;
+//         body.style.backgroundColor = color;
+//     }, 1000)
+// });
+// btnStop.addEventListener('click', () => {
+//     clearInterval(timerId);
+// });
 
-// const parent = document.querySelector('div');
-// const btnAdd = document.querySelector('button');
-
-// const makeSum = () => {
-//     const firstNum = parent.children[1].value;
-//     const secondNum = parent.children[3].value;
-//     const viewRes = document.querySelector('.result');
-//     const result = Number(firstNum) + Number(secondNum);
-//     viewRes.textContent = String(result);
-// };
-// btnAdd.addEventListener('click', makeSum);
-
-// const btnSub = document.querySelector('.js-sub');
-// const btnAdd = document.querySelector('.js-add');
-
-// const subVal = () => {
-//     const val = document.querySelector('.js-value');
-//     let num = Number(val.textContent);
-//     if(num === 0){
-//         val.textContent = String(0);
+// function getFormattedTime(time) {
+//     let date = new Date();
+//     date.setTime(time);
+//     let minutes = addFirstZero(date.getMinutes());
+//     let seconds = addFirstZero(date.getSeconds());
+//     let millisec = String(date.getMilliseconds()).split('');
+//     return `${minutes}:${seconds}.${millisec[0]}`;
+// }
+// const addFirstZero = (number) => {
+//     if(number < 10 && number >= 0){
+//         number = String('0'+ number);
+//         return number;
 //     }else{
-//         num--;
-//         val.textContent = String(num);
+//         return number;
 //     }
-// };
-// const addVal = () => {
-//     const val = document.querySelector('.js-value');
-//     let num = Number(val.textContent);
-//     num = num+1;
-//     val.textContent = String(num);
-// };
-// btnSub.addEventListener('click', subVal);
-// btnAdd.addEventListener('click', addVal);
+// }
+//   console.log(
+//     getFormattedTime(1523621052858)
+//   ); // 04:12.8
+  
+//   console.log(
+//     getFormattedTime(1523621161159)
+//   ); // 06:01.1
+  
+//   console.log(
+//     getFormattedTime(1523621244239)
+//   ); // 07:24.2
 
-// const form = document.querySelector('.question-form');
-// const btnSend = document.querySelector('.btn');
-// const seeResult = (event) => {
-//     event.preventDefault();
-//     const inputs = Array.from(document.querySelectorAll('input'));
-//     const findChecked = () => inputs.find(item => item.checked);
+const clockface = document.querySelector(".js-clockface");
+const startBtn = document.querySelector(".js-timer-start");
+const stopBtn = document.querySelector(".js-timer-stop");
 
-//     const result = document.querySelector('.result');
-//     result.textContent = `Result: ${findChecked().value}`;
-// };
-// btnSend.addEventListener('click', seeResult);
-
-// const images = Array.from(document.querySelectorAll('img'));
-// images.forEach(item => item.addEventListener('click', () => {
-//     console.log(item.getAttribute('src'));
-// }));
-
-// const btnDel = Array.from(document.querySelectorAll('button'));
-// btnDel.forEach(item => item.addEventListener('click', () => item.parentNode.remove()));
-
-// const inputs = Array.from(document.querySelectorAll('input'));
-// const checkVal = (event) => {
-//     const target = event.target;
-//     if(Number(target.dataset.length) <= (target.value.length)-1){
-//         target.style.outline = '2px solid #ff0000';
-//     }else{
-//         target.style.outline = '2px solid #00ff04';
-//     }
-// };
-// inputs.forEach(item => item.addEventListener('blur', checkVal));
-
-// const input = document.querySelector('.input');
-// const seeVal = (event) => {
-//     const target = event.target;
-//     const res = document.querySelector('.input-value');
-//     res.textContent = `Current input value: ${target.value}`;
-// };
-// input.addEventListener('focus', () => console.log('Input is in focus!'));
-// input.addEventListener('input', seeVal);
-
-// const btnView = document.querySelector('.js-open-modal');
-// const btnClose = document.querySelector('.js-close-modal');
-// const modal = document.querySelector('.modal');
-// // const modalBack = document.querySelector('.js-modal-backdrop');
-
-// const viewModal = () => {
-//     modal.classList.remove('modal-hidden');
-// };
-// const closeModal = () => {
-//     modal.classList.add('modal-hidden');
-// };
-// // const toggleModal = () => {
-// //     modal.classList.toggle('modal-hidden');
-// // }
-// btnView.addEventListener('click', viewModal);
-// btnClose.addEventListener('click', closeModal);
-// // modal.addEventListener('click', closeModal);
-
-const menu = document.querySelector('.js-menu');
-const links = menu.querySelectorAll('.menu-link');
-
-const itemClick = ({target}) => {
-    const nodeName = target.nodeName;
-    event.preventDefault();
-
-    if(nodeName !== 'A') return;
-
-    links.forEach(item => {
-        if(item !== target){
-            item.classList.remove('menu-link-active');
-        }else{
-            item.classList.add('menu-link-active');
-        }
-    });
+const timer = {
+  startTime: null,
+  deltaTime: null,
+  id: null
 };
-menu.addEventListener('click', itemClick);
+
+
+const startTimer = ({target}) => {
+    setActiveBtn(target);
+    timer.id = setInterval(() => {
+        if(timer.deltaTime === null){
+            let date = new Date();
+            updateClockface(clockface, date.getTime());
+        }else{
+            updateClockface(clockface, timer.deltaTime);
+        }
+    },100);
+}
+startBtn.addEventListener('click', startTimer);
+
+const stopTimer = ({target}) => {
+    setActiveBtn(target);
+    timer.deltaTime = clockface.textContent;
+    clearInterval(timer.id);
+}
+stopBtn.addEventListener('click', stopTimer);
+/*
+* Обновляет поле счетчика новым значением при вызове
+* аргумент time это кол-во миллисекунд
+*/
+function updateClockface(elem, time) {
+  // Используйте функцию getFormattedTime из задания #1
+  if(typeof time === 'number'){
+    elem.textContent = getFormattedTime(time);
+  }else{
+    elem.textContent = time;
+  }
+}
+function getFormattedTime(time) {
+    let date = new Date();
+    date.setTime(time);
+    let minutes = addFirstZero(date.getMinutes());
+    let seconds = addFirstZero(date.getSeconds());
+    let millisec = String(date.getMilliseconds()).split('');
+    return `${minutes}:${seconds}.${millisec[0]}`;
+}
+const addFirstZero = (number) => {
+    if(number < 10 && number >= 0){
+        number = String('0'+ number);
+        return number;
+    }
+    return number;
+}
+/*
+* Подсветка активной кнопки
+*/
+function setActiveBtn(target) {
+  if(target.classList.contains('active')) {
+    return;
+  }
+  
+  startBtn.classList.remove('active');
+  stopBtn.classList.remove('active');
+  
+  target.classList.add('active');
+}
