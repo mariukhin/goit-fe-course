@@ -16,27 +16,21 @@ function Cashier(name, productDatabase) {
         return this.customerMoney;
     };
     this.countTotalPrice = function(order) {
-        const prodKeys = Object.keys(products);
         const orderKeys = Object.keys(order);
         let sum = 0;
-        for (let i = 0; i < prodKeys.length; i++) {
-            for (const key of orderKeys) {
-                if(key === prodKeys[i]){
-                    sum += Number(order[key])*Number(products[key]);
-                }
+        for (const key of orderKeys) {
+            if(this.productDatabase.hasOwnProperty(key)){
+                sum += Number(order[key])*Number(this.productDatabase[key]);
             }
         }
         return sum;
         
     };
     this.countChange = function(totalPrice) {
-        let result;
         if(totalPrice > Number(this.customerMoney)){
-            result = null;
-            return result;
+            return null;
         }else{
-            result = Number(this.customerMoney) - totalPrice;
-            return result;
+            return Number(this.customerMoney) - totalPrice;
         }
     };
     this.onSuccess = (change) => console.log(`Спасибо за покупку, ваша сдача ${change}!`);

@@ -8,12 +8,16 @@ class Hamburger {
   }
 
   addTopping(topping) {
-    if(!this._toppings.includes(topping)) this._toppings.push(topping);
+    if(!this._toppings.includes(topping)){
+      return this._toppings.push(topping);
+    } 
   }
 
   removeTopping(topping) {
-    let idx = this._toppings.indexOf(topping);
-    if(this._toppings.includes(topping)) this._toppings.splice(idx, 1);
+    if(this._toppings.includes(topping)){
+      this._toppings = this._toppings.filter(item => item !== topping);
+      return this._toppings;
+    }
   }
 
   getToppings(){
@@ -32,12 +36,7 @@ class Hamburger {
     const sizeobj = Hamburger.SIZES[this._size];
     const stuffobj = Hamburger.STUFFINGS[this._stuffing];
     const toppingobj = Hamburger.TOPPINGS;
-    let resulttopping = 0;
-    if(this._toppings.length>1){
-      resulttopping = this._toppings.reduce((acc, value) => acc + toppingobj[value].price ,0);
-    }else{
-      resulttopping = toppingobj[this._toppings].price;
-    }
+    let resulttopping = this._toppings.reduce((acc, value) => acc + toppingobj[value].price, 0);
     
     return sizeobj.price + stuffobj.price + resulttopping;
   }
@@ -46,12 +45,7 @@ class Hamburger {
     const sizeobj = Hamburger.SIZES[this._size];
     const stuffobj = Hamburger.STUFFINGS[this._stuffing];
     const toppingobj = Hamburger.TOPPINGS;
-    let resulttopping = 0;
-    if(this._toppings.length>1){
-      resulttopping = this._toppings.reduce((acc , value) => acc + toppingobj[value].calories ,0);
-    }else{
-      resulttopping = toppingobj[this._toppings].calories;
-    }
+    let resulttopping = this._toppings.reduce((acc , value) => acc + toppingobj[value].calories, 0);
     
     return sizeobj.calories + stuffobj.calories + resulttopping;
   }
