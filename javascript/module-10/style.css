@@ -159,3 +159,42 @@
     color: #616161;
   }
 } */
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #fff;
+}
+.section{
+  display: flex;
+  justify-content: space-between;
+}
+.getAll, .getUserById{
+  flex-basis: 380px;
+  padding-top: 20px;
+}
+.getUserById{
+  flex-basis: 300px;
+}
+.addUser, .removeUser, .updateUser{
+  flex-basis: 100px;
+  padding-top: 20px;
+}
+input{
+  margin: 5px 0;
+}
+.mdc-btn {
+  min-width: 88px;
+  margin-top: 10px;
+  height: 36px;
+  padding: 0 16px;
+  border: 0;
+  outline: 0;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: #00796b;
+  cursor: pointer;
+  box-shadow: 0 4px 4px 0 rgba(#414141, 0.3);
+}

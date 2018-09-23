@@ -10,6 +10,42 @@
 </head>
 
 <body>
+    <section class="section">
+        <div class="container getAll">
+            <form class="getAll-form">
+                <button class="mdc-btn js-getAll" type="submit">getAll</button>
+            </form>
+            <p class="result js-resGetAll"></p>
+        </div>
+        <div class="container getUserById">
+            <form class="getUserById-form">
+                <input class="userIdInput" type="text" name="userId" placeholder="Enter user id">
+                <button class="mdc-btn js-getUserById" type="submit">get</button>
+            </form>
+            <p class="result js-resGetUserById"></p>
+        </div>
+        <div class="container addUser">
+            <form class="addUser-form">
+                <input class="addUserName" type="text" name="userName" placeholder="Enter user name">
+                <input class="addUserAge" type="text" name="userAge" placeholder="Enter user age">
+                <button class="mdc-btn js-addUser" type="submit">add</button>
+            </form>
+        </div>
+        <div class="container removeUser">
+            <form class="removeUser-form">
+                <input class="removeById" type="text" name="userId" placeholder="Enter user id">
+                <button class="mdc-btn js-removeUser" type="submit">remove</button>
+            </form>
+        </div>
+        <div class="container updateUser">
+            <form class="updateUser-form">
+                <input class="updateById" type="text" name="userId" placeholder="Enter user id">
+                <input class="updateUserName" type="text" name="userName" placeholder="Enter new user name">
+                <input class="updateUserAge" type="text" name="userAge" placeholder="Enter new user age">
+                <button class="mdc-btn js-updateUser" type="submit">update</button>
+            </form>
+        </div>
+    </section>
     <!-- <div class="container">
         <form class="search-form">
             <input type="text" name="country" placeholder="Enter country name">
@@ -30,15 +66,15 @@
         </form>
         <p class="result"></p>
     </div> -->
-    <div class="container">
+    <!-- <div class="container">
         <form class="search-form">
             <input type="text" name="country" placeholder="Enter user name">
             <button class="mdc-btn js-post" type="submit">post</button>
         </form>
         <p class="result"></p>
-    </div>
-    <script src="module-10-dz.js"></script>
-    <!-- <script src="module-10.js"></script> -->
+    </div> -->
+    <!-- <script src="module-10-dz.js"></script> -->
+    <script src="module-10.js"></script>
 </body>
 
 </html>
