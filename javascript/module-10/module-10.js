@@ -39,7 +39,7 @@ removeUserBtn.addEventListener('click', (evt) => {
     const id = removeById.value;
     removeUser(id);
 });
-updateUserBtn.addEventListener('click', (evt) => {
+updateUserBtn.addEventListener('click', evt => {
     evt.preventDefault();
     const id = updateById.value;
     const newName = updateUserName.value;
@@ -111,13 +111,8 @@ function removeUser(id) {
 function updateUser(id, user) {
     const newUrl = apiUrl+id;
     return fetch(newUrl, {
-        method: 'POST',
+        method: 'PUT',
         body: JSON.stringify(user),
-        credentials: 'include',
-        headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-        }
     })
     .then(response => {
         if(response.ok) return response.json();
