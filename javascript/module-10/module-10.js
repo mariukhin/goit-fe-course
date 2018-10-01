@@ -113,6 +113,9 @@ function updateUser(id, user) {
     return fetch(newUrl, {
         method: 'PUT',
         body: JSON.stringify(user),
+        headers: {
+            'Content-Type': 'application/json'
+        }
     })
     .then(response => {
         if(response.ok) return response.json();
