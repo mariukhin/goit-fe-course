@@ -137,15 +137,19 @@ function filter(evt) {
       const inclRelDate = listFilter.release_date.includes(item.release_date);
       if(inclSize && inclColor && inclRelDate){
         results.push(item);
+        return;
       } 
       if(inclSize && inclColor){
         results.push(item);
+        return;
       }
       if(inclSize && inclRelDate){
         results.push(item);
+        return;
       }
       if(inclColor && inclRelDate){
         results.push(item);
+        return;
       }
     })
     const markup = results.reduce((acc , item) => acc + template(item), '');

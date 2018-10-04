@@ -160,7 +160,7 @@
   }
 } */
 
-body {
+/* body {
   font-family: "Roboto", sans-serif;
   background: #fff;
 }
@@ -197,4 +197,52 @@ input{
   background-color: #00796b;
   cursor: pointer;
   box-shadow: 0 4px 4px 0 rgba(#414141, 0.3);
+} */
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #fff;
 }
+.container {
+  padding-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+img{
+  display: block;
+  width: 300px;
+}
+.post{
+  flex-basis: 300px;
+  margin-left: 20px;
+  box-shadow: 10px 5px 5px rgb(63, 62, 62);
+  background-color: lemonchiffon;
+  border: 1px solid black;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+.mdc-btn {
+  min-width: 88px;
+  margin-top: 10px;
+  height: 36px;
+  padding: 0 16px;
+  border: 0;
+  outline: 0;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: #00796b;
+  cursor: pointer;
+  box-shadow: 0 4px 4px 0 rgba(#414141, 0.3);
+}
+
+.name, .photo, .descr, .color, .price, .release_date{
+    padding: 10px;
+}
+
+

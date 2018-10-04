@@ -62,10 +62,11 @@
                 </li>
             </ul>
         </section>
-        <button type="submit" class="js-filter">Filter</button>
-        <button type="reset" class="js-clear" >Clear</button>
-        <div class="container"></div>
+        <button type="submit" class="mdc-btn js-filter">Filter</button>
+        <button type="reset" class="mdc-btn js-clear" >Clear</button>
     </form>
+    <i></i>
+    <div class="container"></div>
     <!-- <div class="menu">
         <ul class="list"></ul>
     </div> -->
@@ -80,11 +81,11 @@
     <script id="source" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js">
         <div class="post">
             <h2 class="name">{{ name }}</h2>
-            <img src="{{img}}" alt="img"/>
-            <p class="descr">{{ descr }}</p>
-            <p class="color">{{ color }}</p>
-            <p class="price">{{ price }}</p>
-            <p class="release_date">{{ release_date }}</p>
+            <img class = "photo" src="{{img}}" alt="img"/>
+            <p class="descr"><b>Description: </b>{{ descr }}</p>
+            <p class="color"><b>Color: </b>{{ color }}</p>
+            <p class="price"><b>Price: </b>{{ price }}</p>
+            <p class="release_date"><b>Release date: </b>{{ release_date }}</p>
         </div>
     </script>
     <!-- <script src="js/module-11-dz.js"></script> -->
