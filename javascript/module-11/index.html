@@ -10,19 +10,85 @@
 </head>
 
 <body>
+    <form class="form js-form">
+        <section>
+            <h2>Screen size</h2>
+            <ul>
+                <li>
+                    <label>
+                        <input type="checkbox" name="size" class="js-size13" value="13"> 13"</label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" name="size" class="js-size15" value="15"> 15"</label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" name="size" class="js-size17" value="17"> 17"</label>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Color</h2>
+            <ul>
+                <li>
+                    <label>
+                        <input type="checkbox" name="color" class="js-colorWhite" value="white"> white</label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" name="color" class="js-colorGray" value="gray"> gray</label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" name="color" class="js-colorBlack" value="black"> black</label>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Release date</h2>
+            <ul>
+                <li>
+                    <label>
+                        <input type="checkbox" name="release_date" class="js-rel2015" value="2015"> 2015</label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" name="release_date" class="js-rel2016" value="2016"> 2016</label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" name="release_date" class="js-rel2017" value="2017"> 2017</label>
+                </li>
+            </ul>
+        </section>
+        <button type="submit" class="js-filter">Filter</button>
+        <button type="reset" class="js-clear" >Clear</button>
+        <div class="container"></div>
+    </form>
     <!-- <div class="menu">
         <ul class="list"></ul>
     </div> -->
-    <div class="container"></div>
+    <!-- <div class="container"></div>
     <script id="source" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js">
         <div class="post">
             <h2 class="title">{{ title }}</h2>
             <p class="text">{{ text }}</p>
             <span class="fav-icon">{{isFav}}</span>
         </div>
+    </script> -->
+    <script id="source" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js">
+        <div class="post">
+            <h2 class="name">{{ name }}</h2>
+            <img src="{{img}}" alt="img"/>
+            <p class="descr">{{ descr }}</p>
+            <p class="color">{{ color }}</p>
+            <p class="price">{{ price }}</p>
+            <p class="release_date">{{ release_date }}</p>
+        </div>
     </script>
-    <script src="js/module-11-dz.js"></script>
-    <!-- <script src="js/module-11.js"></script> -->
+    <!-- <script src="js/module-11-dz.js"></script> -->
+    <script src="js/module-11.js"></script>
 </body>
 
 </html>
