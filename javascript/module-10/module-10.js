@@ -54,7 +54,10 @@ updateUserBtn.addEventListener('click', evt => {
 function getAllUsers() {
     return fetch(apiUrl)
     .then(response => {
-        if(response.ok) return response.json();
+        if(response.ok){
+            alert(`Success: ${response.status}`);
+            return response.json();
+        }
         throw new Error('Error' + response.statusText);
     })
     .then(data => {
@@ -69,7 +72,10 @@ function getAllUsers() {
 function getUserById(id) {
     return fetch(apiUrl)
         .then(response => {
-            if(response.ok) return response.json();
+            if(response.ok){
+                alert(`Success: ${response.status}`);
+                return response.json();
+            }
             throw new Error('Error' + response.statusText);
         })
         .then(data => {
@@ -92,7 +98,10 @@ function addUser(name, age) {
         }
     })
     .then(response => {
-        if(response.ok) return response.json();
+        if(response.ok){
+            alert(`Success: ${response.status}`);
+            return response.json();
+        }
         throw new Error('Error' + response.statusText);
     })
     .catch(err => console.log(err));
@@ -103,7 +112,10 @@ function removeUser(id) {
         method: 'DELETE'
     })
         .then(response => {
-            if(response.ok) return response.json();
+            if(response.ok){
+                alert(`Success: ${response.status}`);
+                return response.json();
+            }
             throw new Error('Error' + response.statusText);
         })
         .catch(err => console.log(err));
@@ -118,7 +130,10 @@ function updateUser(id, user) {
         }
     })
     .then(response => {
-        if(response.ok) return response.json();
+        if(response.ok){
+            alert(`Success: ${response.status}`);
+            return response.json();
+        }
         throw new Error('Error' + response.statusText);
     })
     .catch(err => console.log(err));

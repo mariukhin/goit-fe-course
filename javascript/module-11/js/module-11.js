@@ -99,7 +99,6 @@ const listFilter = {
     color: [], 
     release_date: []
 };
-let results = [];
 
 const btnFilter = document.querySelector(".js-filter");
 const btnClear = document.querySelector(".js-clear");
@@ -120,7 +119,6 @@ const thirdRelDate = document.querySelector(".js-rel2017");
 
 const container = document.querySelector('.container');
 const source = document.querySelector('#source').innerHTML.trim();
-const template = Handlebars.compile(source);
 
 form.addEventListener("submit", filter);
 btnClear.addEventListener("click", clear);
@@ -131,29 +129,12 @@ function filter(evt) {
     addToFilter(listFilter.color, firstColor, secColor, thirdColor);
     addToFilter(listFilter.release_date, firstRelDate, secRelDate, thirdRelDate);
 
-    laptops.filter(item => {
-      const inclSize = listFilter.size.includes(item.size);
-      const inclColor = listFilter.color.includes(item.color);
-      const inclRelDate = listFilter.release_date.includes(item.release_date);
-      if(inclSize && inclColor && inclRelDate){
-        results.push(item);
-        return;
-      } 
-      if(inclSize && inclColor){
-        results.push(item);
-        return;
-      }
-      if(inclSize && inclRelDate){
-        results.push(item);
-        return;
-      }
-      if(inclColor && inclRelDate){
-        results.push(item);
-        return;
-      }
-    })
-    const markup = results.reduce((acc , item) => acc + template(item), '');
-    container.innerHTML = markup;
+    const items = itemsFilter(listFilter.size, listFilter.color, listFilter.release_date);
+    if (items.length !== 0) {
+      showItems(items);
+    } else {
+      alert('Not found');
+    }
 }
 function clear() {
     container.innerHTML = '';
@@ -169,4 +150,42 @@ function addToFilter(section, ...args){
           }
         }
     })
+}
+function showItems(items) {
+  const template = Handlebars.compile(source);
+  const markup = items.reduce((acc , item) => acc + template(item), '');
+  container.innerHTML = markup;
+}
+function itemsFilter(sizes, colors, dates) {
+  if (sizes.length === 0 && colors.length === 0 && dates.length === 0) {
+    return laptops;
+  }
+  if (sizes.length === 0 && colors.length === 0) {
+    return laptops.filter(laptop => dates.includes(laptop.release_date)
+    );
+  }
+  if (sizes.length === 0 && dates.length === 0) {
+    return laptops.filter(laptop => colors.includes(laptop.color));
+  }
+  if (dates.length === 0 && colors.length === 0) {
+    return laptops.filter(laptop => sizes.includes(laptop.size));
+  }
+  if (sizes.length === 0) {
+    return laptops.filter(
+      laptop => colors.includes(laptop.color) && dates.includes(laptop.release_date)
+    );
+  }
+  if (colors.length === 0) {
+    return laptops.filter(
+      laptop => sizes.includes(laptop.size) && dates.includes(laptop.release_date)
+    );
+  }
+  if (dates.length === 0) {
+    return laptops.filter(
+      laptop => colors.includes(laptop.color) && sizes.includes(laptop.size)
+    );
+  }
+  return laptops.filter(
+    laptop => colors.includes(laptop.color) && sizes.includes(laptop.size) && dates.includes(laptop.release_date)
+  );
 }
