@@ -100,9 +100,7 @@ const listFilter = {
     release_date: []
 };
 
-const btnFilter = document.querySelector(".js-filter");
 const btnClear = document.querySelector(".js-clear");
-
 const form = document.querySelector(".js-form");
 
 const firstSize = document.querySelector(".js-size13");
@@ -125,6 +123,7 @@ btnClear.addEventListener("click", clear);
 
 function filter(evt) {
     evt.preventDefault();
+    clear();
     addToFilter(listFilter.size, firstSize, secSize, thirdSize);
     addToFilter(listFilter.color, firstColor, secColor, thirdColor);
     addToFilter(listFilter.release_date, firstRelDate, secRelDate, thirdRelDate);
@@ -137,6 +136,9 @@ function filter(evt) {
     }
 }
 function clear() {
+    listFilter.size = [];
+    listFilter.color = [];
+    listFilter.release_date = [];
     container.innerHTML = '';
 }
 
@@ -157,35 +159,34 @@ function showItems(items) {
   container.innerHTML = markup;
 }
 function itemsFilter(sizes, colors, dates) {
-  if (sizes.length === 0 && colors.length === 0 && dates.length === 0) {
-    return laptops;
+  // return laptops.reduce((acc, item) => {
+  //   if(sizes.includes(item.size) && colors.includes(item.color) 
+  //   && dates.includes(item.release_date)){
+  //       return acc.concat([item]);
+  //   }return acc;
+  // }, []);
+  let result = [];
+  const resSizes = laptops.filter(item => sizes.includes(item.size));
+  const resColors = laptops.filter(item => colors.includes(item.color));
+  const resDates = laptops.filter(item => dates.includes(item.release_date));
+
+  if(sizes.length>0){
+    result = resSizes;
+  }else if(colors.length>0){
+    result = resColors;
+    if(dates.length>0){
+      result = result.filter(item => dates.includes(item.release_date));
+    }
+  }else if(dates.length>0){
+    result = resDates;
   }
-  if (sizes.length === 0 && colors.length === 0) {
-    return laptops.filter(laptop => dates.includes(laptop.release_date)
-    );
+
+  if(colors.length>0){
+    result = result.filter(item => colors.includes(item.color));
   }
-  if (sizes.length === 0 && dates.length === 0) {
-    return laptops.filter(laptop => colors.includes(laptop.color));
+  
+  if(dates.length>0){
+    result = result.filter(item => dates.includes(item.release_date));
   }
-  if (dates.length === 0 && colors.length === 0) {
-    return laptops.filter(laptop => sizes.includes(laptop.size));
-  }
-  if (sizes.length === 0) {
-    return laptops.filter(
-      laptop => colors.includes(laptop.color) && dates.includes(laptop.release_date)
-    );
-  }
-  if (colors.length === 0) {
-    return laptops.filter(
-      laptop => sizes.includes(laptop.size) && dates.includes(laptop.release_date)
-    );
-  }
-  if (dates.length === 0) {
-    return laptops.filter(
-      laptop => colors.includes(laptop.color) && sizes.includes(laptop.size)
-    );
-  }
-  return laptops.filter(
-    laptop => colors.includes(laptop.color) && sizes.includes(laptop.size) && dates.includes(laptop.release_date)
-  );
+  return result;
 }
