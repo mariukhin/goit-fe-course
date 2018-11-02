@@ -41,6 +41,11 @@ module.exports = {
             test: /\.hbs$/,
             exclude: /node_modules/, 
             use: ["handlebars-loader"]
+        },
+        {
+            test: /\.(png|svg|jpg|gif)$/,
+            exclude: /node_modules/,
+            use: ["file-loader"],
         }]
     },
     plugins: [

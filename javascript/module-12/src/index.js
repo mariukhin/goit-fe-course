@@ -1,32 +1,46 @@
 import './style.css';
 import './sass/test.scss';
-// import postTpl from './templates/post.hbs';
-// import 'normalize.css';
 
 var axios = require('axios');
 var postTpl = require("./templates/post.hbs");
 
 const form = document.querySelector(".js-form");
-const btnAdd = document.querySelector(".js-add");
+const btnClear = document.querySelector(".js-clear");
 const input = document.querySelector(".js-input");
 const container = document.querySelector(".container");
 
-const addedUrl = [];
+let addedUrl = [];
 const pattern = /^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$/;
 const key = '5bce06a0411b5b82c662168a672cb8f9b7695bb1e3842';
-btnAdd.addEventListener("click", onAdd);
+form.addEventListener("submit", onAdd);
+btnClear.addEventListener("click", onClear);
 
+window.onload = function() {
+  if(localStorage.length >= 1){
+    addedUrl = getLocalStorage('urlArr');
+    showItems(addedUrl);
+    addDeleteButton();
+  }
+}
 function onAdd(evt) {
     evt.preventDefault();
     const url = input.value;
     checkCard(url);
-    console.log(addedUrl);
+}
+function onDelete(evt) {
+    evt.preventDefault();
+    const target = evt.target;
+    const targetParent = target.parentNode;
+    const targetUrl = targetParent.firstElementChild.textContent;
+    deleteItem(targetUrl);
+    setLocalStorage('urlArr', addedUrl.filter(item => item.url != targetUrl));
     showItems(addedUrl);
-    // if (addedUrl.length !== 0) {
-    //   showItems(addedUrl);
-    // } else {
-    //   alert('Not found');
-    // }
+}
+function onClear(evt) {
+    evt.preventDefault();
+    localStorage.clear();
+    addedUrl = [];
+    container.innerHTML = '';
 }
 function checkCard(url) {
     if(isValid(pattern, url)){
@@ -36,7 +50,7 @@ function checkCard(url) {
     }
 }
 function checkPresence(url) {
-  if(addedUrl.includes(url)){
+  if(checkArr(url)){
     alert("This card is alredy been added!");
   }else{
     getCard(url);
@@ -45,82 +59,56 @@ function checkPresence(url) {
 function isValid(pattern, val) {
   return pattern.test(val);
 }
+function checkArr(url) {
+  return addedUrl.find(item => item.url === url);
+}
 function getCard(url) {
-  // const apiUrl = `https://api.linkpreview.net?key=${key}&q=${url}` ;
-  // return fetch(apiUrl)
-  //   .then(response => {
-  //     if(response.ok){
-  //       return response.json();
-  //     }
-  //     throw new Error('Error' + response.statusText);
-  //   })
-  //   .then(data =>{
-  //     addedUrl.push({ 
-  //         title: data.title,
-  //         descr: data.description,
-  //         url: data.url,
-  //         img: data.image
-  //     })
-  //   })
-  //   .catch(err => console.log(err));
   return axios
       .get(`https://api.linkpreview.net?key=${key}&q=${url}`)
       .then(response => {
-        addedUrl.push({ 
-          title: response.data.title,
-          descr: response.data.description,
-          url: response.data.url,
-          img: response.data.image
-        })
-        // console.log(response.data.title);
-        // console.log(response.data.description);
-        // console.log(response.data.url);
-        // console.log(response.data.image);
+        const item = { 
+            title: response.data.title,
+            descr: response.data.description,
+            url: response.data.url,
+            img: response.data.image
+        };
+        addedUrl.unshift(item);
+        setLocalStorage('urlArr', addedUrl);
+        showItems(addedUrl);
+        addDeleteButton();
       })
-      .catch(error => console.log(error));
+      .catch(error =>alert(`Повторите попытку! ${error}`));
 }
 function showItems(items) {
-    const markup = items.reduce((acc , item) => acc + postTpl(item), '');
-    container.innerHTML = markup;
+    if(items.length>0){
+      const markup = items.reduce((acc , item) => acc + postTpl(item), '');
+      container.innerHTML = markup;
+    }else{
+      container.innerHTML = '';
+    }
 }
-/* 
-  Напишите приложение для хранения url веб-страниц в виде карточек-закладок. 
-  
-  Реализуйте следующий функционал:
-    - Используйте Gulp для сборки проекта, JS обработан транспайлером Babel, ресурсы оптимизированы
-    
-    - Для добавления новой закладки, в приложении есть форма с элементом input и кнопкой "Добавить"
-    
-    - В приложении есть список всех добавленных карточек-закладок, располагающийся под формой
-    
-    - Некоторые элементы интерфейса создаются динамически. Используйте шаблонизатор Handlebars для
-      создания списка карточек. Форма уже есть в HTML при загрузке страницы.
-      
-    - При добавлении ссылки в поле формы и нажатии на кнопку "Добавить", происходят проверки:
-        * на существование закладки с такой ссылкой в текущей коллекции закладок. Если такая закладка есть,
-          всплывает диалоговое окно оповещающее пользователя о том, что такая закладка уже есть.
-        * при условии валидной, еще не существующей в коллекции ссылки, карточка с такой ссылкой
-          добавляется в коллекцию.
-          
-    - В интерфейсе, новые карточки добавляются наверх списка, а не вниз.
-    
-    - Каждая карточка-закладка содержит кнопку для удаления карточки из коллекции, при клике 
-      на кнопку происходит удаление.
-      
-    - При повторном посещении страницы с одного и того же устройства и браузера, пользователь видит
-      все карточки-закладки которые были во время последнего его посещения. Используйте localStorage
-      
-  🔔 Оформление интерфейса произвольное
-*/
-
-/*
-  ⚠️ ЗАДАНИЕ ПОВЫШЕННОЙ СЛОЖНОСТИ - ВЫПОЛНЯТЬ ПО ЖЕЛАНИЮ
-  
-    - При добавлении ссылки в поле формы и нажатии на кнопку "Добавить", происходи проверка 
-      на валидность введенной ссылки: если был введен невалидный url то должно всплывать 
-      диалоговое окно, оповещающее пользователя о том, что это невалидный url. Используйте
-      регулярные выражения для валидации url.
-          
-    - Каждая карточка содержит превью изображение и базовую информацию о странице по адресу закладки,
-      для получения этой информации воспользуйтесь этим Rest API - https://www.linkpreview.net/
-*/
+function deleteItem(target) {
+  return addedUrl = (addedUrl.length>0) ? addedUrl.filter(item => item.url != target) : [];
+}
+function addDeleteButton() {
+  const btnDel = Array.from(document.querySelectorAll(".js-delete"));
+  return btnDel.forEach(item => item.addEventListener("click", onDelete));
+}
+function setLocalStorage(key, value) {
+  try {
+    const serState = JSON.stringify(value);
+    localStorage.setItem(key, serState);
+  } catch (error) {
+    console.error("Set state error: ", error);
+  }
+}
+function getLocalStorage(key) {
+  try {
+    const serState = localStorage.getItem(key);
+    return serState === null
+      ? undefined
+      : JSON.parse(serState);
+  } catch (error) {
+    console.error("Get state error: ", error)
+  }
+}
