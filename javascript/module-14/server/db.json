@@ -1,0 +1,25 @@
+{
+  "urls": [
+    {
+      "title": "Build software better, together",
+      "descr": "GitHub is where people build software. More than 28 million people use GitHub to discover, fork, and contribute to over 85 million projects.",
+      "url": "https://github.com/",
+      "img": "https://assets-cdn.github.com/images/modules/open_graph/github-octocat.png",
+      "id": 2
+    },
+    {
+      "title": "Google",
+      "descr": "Celebrate & honor our veterans by listening to their stories of service. Discover five #VeteransVoices in today's #GoogleDoodle & record your own. рџ‡єрџ‡ё",
+      "url": "https://www.google.com.ua/?hl=ru",
+      "img": "https://www.google.com/logos/doodles/2018/veterans-day-2018-5536434952863744-2xa.gif",
+      "id": 3
+    },
+    {
+      "title": "YouTube",
+      "descr": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+      "url": "https://www.youtube.com/",
+      "img": "",
+      "id": 4
+    }
+  ]
+}
